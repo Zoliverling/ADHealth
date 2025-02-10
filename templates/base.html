@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a8a4e6;
+            --accent-color: #81ecec;
+            --bg-gradient-start: #f8f9fa;
+            --bg-gradient-end: #e9ecef;
+            --success-color: #00b894;
+            --warning-color: #fdcb6e;
+            --danger-color: #ff7675;
+            --text-primary: #2d3436;
+            --text-secondary: #636e72;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+            color: var(--text-primary);
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            padding: 48px 0 0;
+            box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
+            background: white;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+            .sidebar.show {
+                transform: translateX(0);
+            }
+            .main-content {
+                margin-left: 0 !important;
+            }
+        }
+
+        .main-content {
+            margin-left: 250px;
+            transition: margin 0.3s ease-in-out;
+        }
+
+        .sidebar-heading {
+            font-size: 1.2rem;
+            padding: 1rem;
+            color: var(--primary-color);
+        }
+
+        .list-group-item-action {
+            color: var(--text-secondary);
+            border: none;
+            margin: 4px 8px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .list-group-item-action:hover {
+            background-color: var(--bg-gradient-start);
+            color: var(--primary-color);
+            transform: translateX(5px);
+        }
+
+        .list-group-item-action.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+            overflow: hidden;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            border-radius: 15px 15px 0 0 !important;
+            border-bottom: none;
+            padding: 1.5rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .btn {
+            border-radius: 8px;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+        }
+
+        .btn-success {
+            background-color: var(--success-color);
+        }
+
+        .btn-warning {
+            background-color: var(--warning-color);
+        }
+
+        .alert {
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            animation: slideIn 0.3s ease-out;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            border: 2px solid #eee;
+            padding: 0.75rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+        }
+
+        .table {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .table th {
+            background-color: var(--bg-gradient-start);
+            border-bottom: none;
+            padding: 1rem;
+        }
+
+        .welcome-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 3rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            color: white;
+            box-shadow: 0 8px 20px rgba(108, 92, 231, 0.2);
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        .badge {
+            padding: 0.5em 1em;
+            border-radius: 6px;
+            font-weight: 500;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom colors for metric cards */
+        .glucose-card .card-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .insulin-card .card-header {
+            background: linear-gradient(135deg, var(--success-color), #55efc4);
+            color: white;
+        }
+
+        .bp-card .card-header {
+            background: linear-gradient(135deg, var(--accent-color), #74b9ff);
+            color: var(--text-primary);
+        }
+
+        /* Loading animation */
+        .loading {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .loading::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                transparent
+            );
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-heading border-bottom">Diabetes Tracker</div>
+        <div class="list-group list-group-flush">
+            <a href="{{ url_for('index') }}" class="list-group-item list-group-item-action {% if request.endpoint == 'index' %}active{% endif %}">
+                <i class="bi bi-house-door"></i> Home
+            </a>
+            <a href="{{ url_for('profile') }}" class="list-group-item list-group-item-action {% if request.endpoint == 'profile' %}active{% endif %}">
+                <i class="bi bi-person"></i> User Profile
+            </a>
+            <a href="{{ url_for('daily_data') }}" class="list-group-item list-group-item-action {% if request.endpoint == 'daily_data' %}active{% endif %}">
+                <i class="bi bi-graph-up"></i> Daily Data
+            </a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container py-4">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

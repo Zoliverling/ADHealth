@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="welcome-section mb-4 animate__animated animate__fadeIn">
+    <h2 class="display-5">User Profile</h2>
+    <p class="lead mb-0">Customize your health tracking experience</p>
+</div>
+
+<div class="row">
+    <div class="col-md-8 mx-auto animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="mb-0">Health Profile Settings</h3>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('profile') }}" class="profile-form">
+                    <div class="section-card mb-4 animate__animated animate__fadeIn" style="animation-delay: 0.2s">
+                        <h4 class="text-primary mb-3">Personal Information</h4>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" name="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Age</label>
+                                <input type="number" class="form-control" name="age" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-card mb-4 animate__animated animate__fadeIn" style="animation-delay: 0.3s">
+                        <h4 class="text-primary mb-3">Target Ranges</h4>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Target Glucose Range (mg/dL)</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" name="glucose_min" placeholder="Min">
+                                    <span class="input-group-text">-</span>
+                                    <input type="number" class="form-control" name="glucose_max" placeholder="Max">
+                                </div>
+                                <small class="text-muted">Recommended: 70-180 mg/dL</small>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Target Blood Pressure</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" name="bp_systolic" placeholder="Systolic">
+                                    <span class="input-group-text">/</span>
+                                    <input type="number" class="form-control" name="bp_diastolic" placeholder="Diastolic">
+                                </div>
+                                <small class="text-muted">Recommended: Below 130/80</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-card mb-4 animate__animated animate__fadeIn" style="animation-delay: 0.4s">
+                        <h4 class="text-primary mb-3">Medical Information</h4>
+                        <div class="mb-3">
+                            <label class="form-label">Diabetes Type</label>
+                            <select class="form-select" name="diabetes_type">
+                                <option value="1">Type 1</option>
+                                <option value="2">Type 2</option>
+                                <option value="gestational">Gestational</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Medications</label>
+                            <textarea class="form-control" name="medications" rows="3" placeholder="List your current medications"></textarea>
+                            <small class="text-muted">Include insulin types and other diabetes medications</small>
+                        </div>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Save Profile</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.section-card {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.section-card:hover {
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.input-group {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.input-group-text {
+    background: var(--bg-gradient-start);
+    border: none;
+    color: var(--text-secondary);
+}
+
+.form-select {
+    border-radius: 8px;
+    border: 2px solid #eee;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.profile-form');
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Add loading state
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
+        submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Saving...';
+        submitButton.disabled = true;
+        
+        // Simulate form submission (replace with actual submission)
+        setTimeout(() => {
+            submitButton.innerHTML = '<span class="text-white">✓ Profile Saved</span>';
+            
+            // Reset button after showing success
+            setTimeout(() => {
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+            }, 2000);
+        }, 800);
+    });
+});
+</script>
+{% endblock %}

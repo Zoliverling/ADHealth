@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="welcome-section text-center mb-5 animate__animated animate__fadeIn">
+    <h1 class="display-4 mb-3">Welcome to Your Diabetes Management Hub</h1>
+    <p class="lead mb-0">Track your health metrics throughout the day. All entries for today will be grouped together.</p>
+    <p class="text-white-50 mt-2">Today's Date: {{ entry.date.strftime('%Y-%m-%d') }}</p>
+</div>
+
+<div class="row mb-4">
+    <!-- Glucose Section -->
+    <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
+        <div class="card h-100 glucose-card">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Blood Glucose</h3>
+                {% if entry.time_glucose %}
+                <small class="timestamp">Last updated: {{ entry.time_glucose.strftime('%H:%M') }}</small>
+                {% endif %}
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('update_metric', metric='glucose') }}" class="glucose-form">
+                    <div class="mb-3">
+                        <label class="form-label">Glucose Level (mg/dL)</label>
+                        <input type="number" step="0.1" class="form-control" name="glucose_level" value="{{ entry.glucose_level or '' }}" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Update Glucose</button>
+                </form>
+                {% if glucose_insight %}
+                <div class="mt-4">
+                    <h5 class="text-secondary">Professional Insight:</h5>
+                    <div class="alert alert-info">{{ glucose_insight }}</div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Insulin Section -->
+    <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+        <div class="card h-100 insulin-card">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Insulin Intake</h3>
+                {% if entry.time_insulin %}
+                <small class="timestamp">Last updated: {{ entry.time_insulin.strftime('%H:%M') }}</small>
+                {% endif %}
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('update_metric', metric='insulin') }}" class="insulin-form">
+                    <div class="mb-3">
+                        <label class="form-label">Insulin Units</label>
+                        <input type="number" step="0.5" class="form-control" name="insulin_units" value="{{ entry.insulin_units or '' }}" required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Update Insulin</button>
+                </form>
+                {% if insulin_insight %}
+                <div class="mt-4">
+                    <h5 class="text-secondary">Professional Insight:</h5>
+                    <div class="alert alert-info">{{ insulin_insight }}</div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Blood Pressure Section -->
+    <div class="col-md-4 animate__animated animate__fadeInUp" style="animation-delay: 0.3s">
+        <div class="card h-100 bp-card">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Blood Pressure</h3>
+                {% if entry.time_bp %}
+                <small class="timestamp">Last updated: {{ entry.time_bp.strftime('%H:%M') }}</small>
+                {% endif %}
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('update_metric', metric='bp') }}" class="bp-form">
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Systolic</label>
+                            <input type="number" class="form-control" name="systolic_bp" value="{{ entry.systolic_bp or '' }}" required>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Diastolic</label>
+                            <input type="number" class="form-control" name="diastolic_bp" value="{{ entry.diastolic_bp or '' }}" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-info w-100">Update Blood Pressure</button>
+                </form>
+                {% if bp_insight %}
+                <div class="mt-4">
+                    <h5 class="text-secondary">Professional Insight:</h5>
+                    <div class="alert alert-info">{{ bp_insight }}</div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Entries Table -->
+<div class="card mt-5 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h3 class="mb-0">Recent Daily Entries</h3>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Glucose (Time)</th>
+                        <th>Insulin (Time)</th>
+                        <th>Blood Pressure (Time)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for entry in recent_entries %}
+                    <tr class="animate__animated animate__fadeIn" style="animation-delay: {{ loop.index * 0.1 }}s">
+                        <td>{{ entry.date.strftime('%Y-%m-%d') }}</td>
+                        <td>
+                            {% if entry.glucose_level %}
+                            <div class="d-flex align-items-center">
+                                <span class="me-2">{{ entry.glucose_level }} mg/dL</span>
+                                {% if entry.glucose_level > 180 %}
+                                <span class="badge bg-danger">High</span>
+                                {% elif entry.glucose_level < 70 %}
+                                <span class="badge bg-warning">Low</span>
+                                {% else %}
+                                <span class="badge bg-success">Normal</span>
+                                {% endif %}
+                            </div>
+                            <small class="text-muted">{{ entry.time_glucose.strftime('%H:%M') }}</small>
+                            {% else %}
+                            -
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if entry.insulin_units %}
+                            <div>{{ entry.insulin_units }} units</div>
+                            <small class="text-muted">{{ entry.time_insulin.strftime('%H:%M') }}</small>
+                            {% else %}
+                            -
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if entry.systolic_bp and entry.diastolic_bp %}
+                            <div class="d-flex align-items-center">
+                                <span class="me-2">{{ entry.systolic_bp }}/{{ entry.diastolic_bp }}</span>
+                                {% if entry.systolic_bp > 130 or entry.diastolic_bp > 80 %}
+                                <span class="badge bg-warning">Elevated</span>
+                                {% else %}
+                                <span class="badge bg-success">Normal</span>
+                                {% endif %}
+                            </div>
+                            <small class="text-muted">{{ entry.time_bp.strftime('%H:%M') }}</small>
+                            {% else %}
+                            -
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Add JavaScript for AJAX form submission with loading states -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const forms = document.querySelectorAll('.glucose-form, .insulin-form, .bp-form');
+    
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Add loading state
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Updating...';
+            submitButton.disabled = true;
+            form.classList.add('loading');
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.insight) {
+                    const insightDiv = form.parentElement.querySelector('.alert');
+                    if (insightDiv) {
+                        insightDiv.style.opacity = '0';
+                        setTimeout(() => {
+                            insightDiv.textContent = data.insight;
+                            insightDiv.style.opacity = '1';
+                        }, 300);
+                    } else {
+                        const newInsightDiv = document.createElement('div');
+                        newInsightDiv.className = 'mt-4 animate__animated animate__fadeIn';
+                        newInsightDiv.innerHTML = `
+                            <h5 class="text-secondary">Professional Insight:</h5>
+                            <div class="alert alert-info">${data.insight}</div>
+                        `;
+                        form.insertAdjacentElement('afterend', newInsightDiv);
+                    }
+                }
+                
+                // Remove loading state and refresh the page smoothly
+                setTimeout(() => {
+                    submitButton.innerHTML = originalText;
+                    submitButton.disabled = false;
+                    form.classList.remove('loading');
+                    
+                    // Fade out the content
+                    document.body.style.opacity = '0';
+                    document.body.style.transition = 'opacity 0.3s ease';
+                    
+                    setTimeout(() => {
+                        location.reload();
+                    }, 300);
+                }, 800);
+            })
+            .catch(error => {
+                submitButton.innerHTML = originalText;
+                submitButton.disabled = false;
+                form.classList.remove('loading');
+                alert('An error occurred. Please try again.');
+            });
+        });
+    });
+});
+</script>
+{% endblock %}

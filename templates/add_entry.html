@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mb-4">Add New Entry</h1>
+
+<form method="POST" class="col-md-6">
+    <div class="mb-3">
+        <label for="glucose_level" class="form-label">Glucose Level (mg/dL)</label>
+        <input type="number" step="0.1" class="form-control" id="glucose_level" name="glucose_level" required>
+    </div>
+    
+    <div class="mb-3">
+        <label for="insulin_units" class="form-label">Insulin Units</label>
+        <input type="number" step="0.5" class="form-control" id="insulin_units" name="insulin_units" required>
+    </div>
+    
+    <div class="mb-3">
+        <label for="carbs" class="form-label">Carbohydrates (g)</label>
+        <input type="number" class="form-control" id="carbs" name="carbs">
+    </div>
+    
+    <div class="mb-3">
+        <label for="notes" class="form-label">Notes</label>
+        <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Save Entry</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
