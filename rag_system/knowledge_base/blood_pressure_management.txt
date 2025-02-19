@@ -1,0 +1,40 @@
+Blood Pressure Management in Diabetes
+
+Blood Pressure Categories:
+- Normal: Less than 120/80 mmHg
+- Elevated: 120-129/<80 mmHg
+- Stage 1 Hypertension: 130-139/80-89 mmHg
+- Stage 2 Hypertension: ≥140/≥90 mmHg
+- Hypertensive Crisis: >180/>120 mmHg
+
+Target Blood Pressure for Diabetes:
+- General target: <140/90 mmHg
+- Optimal target: <130/80 mmHg
+- Individual targets may vary based on age and other conditions
+
+Management Strategies:
+- Lifestyle Modifications:
+  * Reduce sodium intake (<2,300 mg/day)
+  * DASH diet recommended
+  * Regular physical activity
+  * Maintain healthy weight
+  * Limit alcohol consumption
+  * Quit smoking
+
+Monitoring Recommendations:
+- Check BP at every routine diabetes visit
+- Home monitoring if prescribed
+- Record readings at different times of day
+- Note any symptoms or triggers
+
+When to Seek Medical Attention:
+- Readings consistently above 140/90 mmHg
+- Symptoms like severe headache, vision problems
+- Readings above 180/120 mmHg (emergency)
+- Unusually low readings with symptoms
+
+Impact on Diabetes:
+- High BP increases risk of diabetes complications
+- May affect blood glucose management
+- Regular monitoring of both BP and glucose important
+- Medications may need adjustment based on both conditions

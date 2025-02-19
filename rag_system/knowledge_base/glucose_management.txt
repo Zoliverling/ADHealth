@@ -1,0 +1,32 @@
+Blood Glucose Management Guidelines
+
+Target Blood Glucose Ranges:
+- Before meals: 80-130 mg/dL
+- After meals (2 hours): Less than 180 mg/dL
+- Bedtime: 90-150 mg/dL
+
+High Blood Glucose (Hyperglycemia):
+- Levels above 180 mg/dL are considered high
+- Symptoms may include increased thirst, frequent urination, fatigue
+- Actions to take:
+  * Check ketones if glucose is above 240 mg/dL
+  * Stay hydrated
+  * Follow insulin adjustment protocols if prescribed
+  * Monitor more frequently
+  * Review carbohydrate intake
+
+Low Blood Glucose (Hypoglycemia):
+- Levels below 70 mg/dL are considered low
+- Severe hypoglycemia: below 54 mg/dL
+- Immediate actions:
+  * Consume 15-20g fast-acting carbohydrates
+  * Recheck blood sugar after 15 minutes
+  * Repeat treatment if still low
+  * Once normalized, consider a small snack with protein
+
+Prevention Strategies:
+- Regular blood glucose monitoring
+- Consistent meal timing
+- Balanced diet with appropriate carbohydrate counting
+- Regular physical activity
+- Proper medication management

@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+{# Main Content Header #}
 <div class="row mb-4">
     <div class="col animate__animated animate__fadeIn">
         <div class="welcome-section">
@@ -10,94 +11,30 @@
     </div>
 </div>
 
+{# Data Table Section #}
 <div class="row">
-    <div class="col-md-12 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.1s">
+    <div class="col-md-12 mb-4 animate__animated animate__fadeInUp">
         <div class="card">
             <div class="card-header">
                 <div class="d-flex justify-content-between align-items-center">
                     <h3 class="mb-0">Data History</h3>
                     <div class="btn-group">
-                        <button class="btn btn-outline-primary" data-period="week">Last Week</button>
-                        <button class="btn btn-outline-primary" data-period="month">Last Month</button>
-                        <button class="btn btn-outline-primary" data-period="quarter">Last 3 Months</button>
+                        <button class="btn btn-outline-primary {% if current_period == 'week' %}active{% endif %}" data-period="week">Last Week</button>
+                        <button class="btn btn-outline-primary {% if current_period == 'month' %}active{% endif %}" data-period="month">Last Month</button>
+                        <button class="btn btn-outline-primary {% if current_period == 'quarter' %}active{% endif %}" data-period="quarter">Last 3 Months</button>
                     </div>
                 </div>
             </div>
             <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Date & Time</th>
-                                <th>Glucose (mg/dL)</th>
-                                <th>Insulin (units)</th>
-                                <th>Blood Pressure</th>
-                                <th>Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for entry in entries %}
-                            <tr class="animate__animated animate__fadeIn" style="animation-delay: {{ loop.index * 0.05 }}s">
-                                <td>{{ entry.date.strftime('%Y-%m-%d') }}</td>
-                                <td>
-                                    {% if entry.glucose_level is not none %}
-                                        <div class="d-flex align-items-center">
-                                            <span class="me-2">{{ entry.glucose_level }}</span>
-                                            {% if entry.glucose_level > 180 %}
-                                                <span class="badge bg-danger">High</span>
-                                            {% elif entry.glucose_level < 70 %}
-                                                <span class="badge bg-warning">Low</span>
-                                            {% else %}
-                                                <span class="badge bg-success">Normal</span>
-                                            {% endif %}
-                                        </div>
-                                        {% if entry.time_glucose %}
-                                            <small class="text-muted d-block">{{ entry.time_glucose.strftime('%H:%M') }}</small>
-                                        {% endif %}
-                                    {% else %}
-                                        <span class="text-muted">-</span>
-                                    {% endif %}
-                                </td>
-                                <td>
-                                    {% if entry.insulin_units is not none %}
-                                        <div>{{ entry.insulin_units }}</div>
-                                        {% if entry.time_insulin %}
-                                            <small class="text-muted d-block">{{ entry.time_insulin.strftime('%H:%M') }}</small>
-                                        {% endif %}
-                                    {% else %}
-                                        <span class="text-muted">-</span>
-                                    {% endif %}
-                                </td>
-                                <td>
-                                    {% if entry.systolic_bp is not none and entry.diastolic_bp is not none %}
-                                        <div class="d-flex align-items-center">
-                                            <span class="me-2">{{ entry.systolic_bp }}/{{ entry.diastolic_bp }}</span>
-                                            {% if entry.systolic_bp > 130 or entry.diastolic_bp > 80 %}
-                                                <span class="badge bg-warning">Elevated</span>
-                                            {% else %}
-                                                <span class="badge bg-success">Normal</span>
-                                            {% endif %}
-                                        </div>
-                                        {% if entry.time_bp %}
-                                            <small class="text-muted d-block">{{ entry.time_bp.strftime('%H:%M') }}</small>
-                                        {% endif %}
-                                    {% else %}
-                                        <span class="text-muted">-</span>
-                                    {% endif %}
-                                </td>
-                                <td>{{ entry.notes if entry.notes else '-' }}</td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
+                {% include 'partials/_data_table.html' %}
             </div>
         </div>
     </div>
 </div>
 
+{# Statistics and Trends Section #}
 <div class="row">
-    <div class="col-md-6 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+    <div class="col-md-6 mb-4 animate__animated animate__fadeInUp">
         <div class="card">
             <div class="card-header">
                 <h3>Statistics</h3>
@@ -107,9 +44,8 @@
                     <div class="col-6 mb-3">
                         <h5 class="text-secondary">Average Glucose</h5>
                         <p class="display-6">
-                            {% set glucose_values = entries|selectattr('glucose_level', 'defined')|selectattr('glucose_level', 'ne', None)|map(attribute='glucose_level')|list %}
-                            {% if glucose_values %}
-                                {{ "%.1f"|format(glucose_values|sum / glucose_values|length) }}
+                            {% if averages.glucose_avg is not none %}
+                                {{ "%.1f"|format(averages.glucose_avg) }}
                                 <small class="text-muted" style="font-size: 1rem;">mg/dL</small>
                             {% else %}
                                 <span class="text-muted">-</span>
@@ -119,9 +55,8 @@
                     <div class="col-6 mb-3">
                         <h5 class="text-secondary">Average Insulin</h5>
                         <p class="display-6">
-                            {% set insulin_values = entries|selectattr('insulin_units', 'defined')|selectattr('insulin_units', 'ne', None)|map(attribute='insulin_units')|list %}
-                            {% if insulin_values %}
-                                {{ "%.1f"|format(insulin_values|sum / insulin_values|length) }}
+                            {% if averages.insulin_avg is not none %}
+                                {{ "%.1f"|format(averages.insulin_avg) }}
                                 <small class="text-muted" style="font-size: 1rem;">units</small>
                             {% else %}
                                 <span class="text-muted">-</span>
@@ -133,7 +68,7 @@
         </div>
     </div>
 
-    <div class="col-md-6 mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.3s">
+    <div class="col-md-6 mb-4 animate__animated animate__fadeInUp">
         <div class="card">
             <div class="card-header">
                 <h3>Trends</h3>
@@ -151,7 +86,7 @@
                         <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
                     </svg>
                     <p class="text-muted">Trend analysis coming soon</p>
-                    <p class="text-secondary small">We're working on adding beautiful visualizations to help you track your progress</p>
+                    <p class="text-secondary small">We're working on adding visualizations to help you track your progress</p>
                 </div>
             </div>
         </div>
@@ -164,17 +99,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     buttons.forEach(button => {
         button.addEventListener('click', function() {
+            const period = this.dataset.period;
+            const table = document.querySelector('.table-responsive');
+            
             buttons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
-            
-            // Add loading animation
-            const table = document.querySelector('.table-responsive');
             table.classList.add('loading');
             
-            // Simulate data loading (replace with actual API call)
-            setTimeout(() => {
-                table.classList.remove('loading');
-            }, 800);
+            window.location.href = `{{ url_for('daily_data') }}?period=${period}`;
         });
     });
 });

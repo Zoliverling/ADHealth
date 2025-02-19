@@ -1,0 +1,30 @@
+Insulin Management Guidelines
+
+Insulin Types and Duration:
+- Rapid-acting: Onset 15 min, Peak 1-2 hrs, Duration 2-4 hrs
+- Short-acting: Onset 30 min, Peak 2-3 hrs, Duration 3-6 hrs
+- Intermediate-acting: Onset 2-4 hrs, Peak 4-12 hrs, Duration 12-18 hrs
+- Long-acting: Onset 2 hrs, No peak, Duration 24+ hrs
+
+Insulin-to-Carb Ratios:
+- Typical starting ratios: 1 unit per 10-15g carbs
+- May vary by time of day and individual needs
+- Should be adjusted based on post-meal glucose patterns
+
+Correction Factor Guidelines:
+- Typical starting point: 1 unit lowers glucose by 50 mg/dL
+- Individual correction factors vary
+- Consider active insulin time (insulin on board)
+
+Safety Considerations:
+- Never stack insulin doses (wait appropriate time between doses)
+- Account for exercise and activity
+- Consider illness and stress factors
+- Monitor for patterns of highs and lows
+
+Storage and Handling:
+- Unopened: Refrigerate (36-46°F)
+- In-use: Room temperature (<86°F)
+- Protect from extreme temperatures
+- Check expiration dates
+- Inspect for clarity before use

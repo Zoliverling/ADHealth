@@ -135,6 +135,25 @@
             border: none;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             animation: slideIn 0.3s ease-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .alert-info {
+            background-color: #e8f4f8;
+            border-color: #bee5eb;
+            color: #0c5460;
+        }
+
+        .alert-danger {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+
+        .insight-text {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            margin-bottom: 0;
         }
 
         .form-control {
@@ -258,27 +277,31 @@
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="sidebar-heading border-bottom">Diabetes Tracker</div>
-        <div class="list-group list-group-flush">
-            <a href="{{ url_for('index') }}" class="list-group-item list-group-item-action {% if request.endpoint == 'index' %}active{% endif %}">
-                <i class="bi bi-house-door"></i> Home
-            </a>
-            <a href="{{ url_for('profile') }}" class="list-group-item list-group-item-action {% if request.endpoint == 'profile' %}active{% endif %}">
-                <i class="bi bi-person"></i> User Profile
-            </a>
-            <a href="{{ url_for('daily_data') }}" class="list-group-item list-group-item-action {% if request.endpoint == 'daily_data' %}active{% endif %}">
-                <i class="bi bi-graph-up"></i> Daily Data
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Diabetes Tracker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('daily_data') }}">Daily Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('profile') }}">Profile</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <main class="main-content">
-        <div class="container py-4">
-            {% block content %}
-            {% endblock %}
-        </div>
-    </main>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
