@@ -30,6 +30,12 @@ class Entry(db.Model):
     carbs = db.Column(db.Integer, nullable=True)
     notes = db.Column(db.Text, nullable=True)
 
+class Chat(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    message = db.Column(db.Text, nullable=False)
+    response = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
 def get_or_create_entry(entry_date):
     entry = Entry.query.filter_by(date=entry_date).first()
     if not entry:
@@ -161,6 +167,47 @@ def daily_data():
                          entries=entries, 
                          current_period=period,
                          averages=averages)
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    message = request.json.get('message')
+    if not message:
+        return jsonify({'error': 'No message provided'}), 400
+    
+    try:
+        # Get recent entries for context
+        recent_entries = Entry.query.order_by(Entry.date.desc()).limit(7).all()
+        
+        # Format entries for context
+        entries_context = []
+        for entry in recent_entries:
+            entry_data = {
+                'date': entry.date.strftime('%Y-%m-%d'),
+                'glucose': entry.glucose_level,
+                'insulin': entry.insulin_units,
+                'bp': f"{entry.systolic_bp}/{entry.diastolic_bp}" if entry.systolic_bp and entry.diastolic_bp else None,
+                'carbs': entry.carbs
+            }
+            entries_context.append(entry_data)
+        
+        # Generate response using RAG system
+        response = insight_interface.get_chat_response(message, entries_context)
+        
+        # Store chat in database
+        chat = Chat(message=message, response=response)
+        db.session.add(chat)
+        db.session.commit()
+        
+        return jsonify({
+            'response': response,
+            'timestamp': chat.timestamp.strftime('%Y-%m-%d %H:%M:%S')
+        })
+    
+    except Exception as e:
+        app.logger.error(f"Error in chat: {str(e)}")
+        return jsonify({
+            'error': 'Unable to process your message at this time.'
+        }), 500
 
 if __name__ == '__main__':
     with app.app_context():

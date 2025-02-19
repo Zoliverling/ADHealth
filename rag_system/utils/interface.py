@@ -101,3 +101,32 @@ class DiabetesInsightInterface:
             insights['blood_pressure'] = normalized_insight
         
         return insights
+
+    def get_chat_response(self, message, entries_context):
+        """
+        Generate a response to a user's chat message using the RAG system.
+        
+        Args:
+            message (str): The user's chat message
+            entries_context (list): List of recent entries with their data
+        """
+        # Format the context for the RAG system
+        context = "Recent health data:\n"
+        for entry in entries_context:
+            context += f"Date: {entry['date']}\n"
+            if entry['glucose'] is not None:
+                context += f"Glucose: {entry['glucose']} mg/dL\n"
+            if entry['insulin'] is not None:
+                context += f"Insulin: {entry['insulin']} units\n"
+            if entry['bp'] is not None:
+                context += f"Blood Pressure: {entry['bp']}\n"
+            if entry.get('carbs') is not None:
+                context += f"Carbs: {entry['carbs']}g\n"
+            context += "\n"
+        
+        # Create a query combining the user's message and context
+        query = f"User Question: {message}\n\nContext:\n{context}\n\nBased on the user's health data and question, provide a helpful response that addresses their query and incorporates relevant information from their recent measurements when applicable."
+        
+        # Generate and format the response
+        response = self.rag_system.generate_insight(query)
+        return self._format_insight(response)
