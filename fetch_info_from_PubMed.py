@@ -3,7 +3,7 @@ import requests
 import xmltodict
 import json
 
-def fetch_pubmed_papers(query, max_results=5):
+def fetch_pubmed_papers(query, max_results=5, output_dir=None):
     """Fetches PubMed articles using an API key stored in an environment variable."""
     api_key = os.getenv("PUBMED_API_KEY")
     base_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
@@ -31,7 +31,9 @@ def fetch_pubmed_papers(query, max_results=5):
     articles = xmltodict.parse(details_response.content)
 
     extracted_data = []
+    count = 0
     for article in articles["PubmedArticleSet"]["PubmedArticle"]:
+        count += 1
         medline = article["MedlineCitation"]
         pub_info = medline["Article"]
 
@@ -86,13 +88,23 @@ def fetch_pubmed_papers(query, max_results=5):
         }
         extracted_data.append(data)
 
+    # Determine output file path
+    if output_dir:
+        # Create directory if it doesn't exist
+        os.makedirs(output_dir, exist_ok=True)
+        output_file = os.path.join(output_dir, "pubmed_articles_clean.json")
+    else:
+        output_file = "pubmed_articles_clean.json"
+
     # Save results to JSON file
-    with open("pubmed_articles_clean.json", "w") as f:
+    with open(output_file, "w") as f:
         json.dump(extracted_data, f, indent=4)
 
-    return extracted_data
+    return extracted_data, count
 
 # Example usage:
 if __name__ == "__main__":
-    papers = fetch_pubmed_papers("diabetes treatment", max_results=50)
-    print(json.dumps(papers, indent=2))
+    output_directory = "scrapped_documents"
+    papers, count = fetch_pubmed_papers("diabetes treatment", max_results=50, output_dir=output_directory)
+    print(f"Output saved to: {os.path.join(output_directory, 'pubmed_articles_clean.json')}")
+    print(f"Total articles fetched: {count}")

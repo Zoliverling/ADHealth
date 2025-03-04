@@ -1,98 +1,929 @@
 [
     {
-        "pmid": "39889253",
-        "title": "Polygenic Susceptibility to Diabetes and Poor Glycemic Control in Stroke Survivors.",
-        "abstract": "Type 2 diabetes mellitus (T2DM) is highly genetically determined, and polygenic susceptibility to T2DM (PSD) increases the risk of worse glycemic control and adverse vascular outcomes. Its role in stroke patients remains unknown. We aim to determine whether higher PSD is associated with worse glycemic control in stroke survivors. We conducted a 2-stage genetic association study. In a cross-sectional design, we selected stroke survivors from the UK Biobank (enrollment between 2006 and 2010) to evaluate the relationship between PSD and glycemic control. Second, we replicated the results using data from All of Us (enrollment between 2018 and 2022). Exposures were low, intermediate, and high PSD, modeled through percentiles (<20, 20-80, >80) of a polygenic risk score of 2,522 independent risk variants associated with T2DM at genome-wide levels ( < 5 \u00d7 10). Outcomes were hemoglobin A1c (HbA1c) levels, uncontrolled diabetes (HbA1c \u22657.0%), and resistant diabetes (uncontrolled despite antidiabetic treatment). Stage 1 included 6,908 stroke survivors (mean age 61 years, 42% female), including 977 (14%) with diabetes. Compared with low PSD, participants with high PSD had an increase of 0.49 in HbA1c (\u03b2 = 0.49, standard error 0.03, -trend <0.001), 6.9 times the odds of uncontrolled diabetes (odds ratio [OR] 6.92, 95% CI 4.71-10.52), and 7.8 times the odds of resistant diabetes (OR 7.76, 95% CI 4.92-12.89). Stage 2 (replication) confirmed the association with HbA1c in 4,451 stroke survivors, including 2,163 (49%) with diabetes (mean age 64 years, 53% female, -trend <0.05 for all tests). Among stroke survivors, a higher PSD was associated with poorer glycemic control. Further research should determine precision medicine strategies using PSD to improve clinical management of stroke patients.",
+        "pmid": "40035956",
+        "title": "Recovery of hypopituitarism in macroprolactinomas: a comparison of medical vs. surgical treatment. Results from a European multicenter study.",
+        "abstract": "Macroprolactinomas not only cause hypogonadism, but also other pituitary dysfunctions, like deficiency of adrenocorticotrophic hormone (ACTH) and thyroid-stimulating hormone (TSH). While dopamine agonist treatment shows varying recovery rates of these insufficiencies, surgical outcomes are less studied, and a direct comparison between treatments is lacking. To evaluate recovery of pituitary dysfunction in medically vs. surgically treated patients with macroprolactinoma. Retrospective multicenter study including 104 patients with macroprolactinoma (44 surgically vs. 60 medically treated) with at least two hormonal deficiencies before treatment. Before surgery, all patients presented with hypogonadotropic hypogonadism, 25 (57%) with ACTH-deficiency, and 32 (73%) with TSH-deficiency. 10 months post-surgery, prolactin normalized in 25 (57%) patients, while 19(43%), 15 (60%) and 10(31%) recovered from hypogonadism, ACTH-deficiency, and TSH-deficiency, respectively. Before medical therapy, hypogonadism was observed in all patients, ACTH-deficiency in 31 (52%), and TSH-deficiency in 50 (83%). After 12 months under dopamine agonists, prolactin levels normalized in 36 (60%) patients, 25(42%) recovered from hypogonadism, 17 (55%) from ACTH-deficiency, and 14(28%) from TSH-deficiency. No significant difference in recovery rates between surgical and medical treatment for hypogonadism (OR 1.633, p\u2009=\u20090.338), ACTH-deficiency (OR 0.462, p\u2009=\u20090.319), or TSH-deficiency (OR 0.584, p\u2009=\u20090.339) was observed. Large initial tumor size was a significant negative predictor of recovery for all hormone deficiencies (always p\u2009<\u20090.05), while prolactin normalization was a predictor of recovery of hypogonadism (p\u2009<\u20090.001). Both surgical and medical treatment allow for hormonal recovery in patients with macroprolactinoma, with no significant advantage for either approach. Initial tumor size and prolactin-normalization are predictors of recovery outcomes.",
         "authors": [
-            "Zachariah S Demarais",
-            "Carolyn Conlon",
-            "Cyprien A Rivier",
-            "Santiago Clocchiatti-Tuozzo",
-            "Daniela Renedo",
-            "Victor Torres-Lopez",
-            "Kevin N Sheth",
-            "Daniella Meeker",
-            "Hongyu Zhao",
-            "Lucila Ohno-Machado",
-            "Julian N Acosta",
-            "Shufan Huo",
-            "Guido J Falcone"
+            "Mario Detomas",
+            "Barbara Altieri",
+            "Isabella Nasi-Kordhishti",
+            "Alice Ryba",
+            "Linus Haberbosch",
+            "Francesco Chierigo",
+            "Timo Deutschbein",
+            "Martin Fassnacht",
+            "Pietro Mortini",
+            "Joerg Flitsch",
+            "Juergen Honegger",
+            "Marco Losa"
         ],
-        "journal": "Neurology",
+        "journal": "Journal of endocrinological investigation",
         "publication_date": "2025",
-        "doi": "10.1212/WNL.0000000000210276",
-        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/39889253/"
+        "doi": "10.1007/s40618-025-02559-8",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035956/"
     },
     {
-        "pmid": "39889198",
-        "title": "Pharmacological treatment of pregnancy complications in adults: An overview of phase IV clinical trials.",
-        "abstract": "The aim of this review was to provide a review of the pharmacological treatments for pregnancy complications in adults. This review analyzed medications used for pregnancy complications in phase IV clinical trials based on the ClinicalTrials.gov database. The search included completed trials only. As of September 1, 2023, a total of 29,654 phase IV clinical trials were identified, of which 298 were related to pregnancy complications. Of these, 24 clinical trials met the inclusion criteria for the current study. In the 24 included clinical trials, we found 9 trials for overactive bladder with 5005 participants in total, 236 of which had adverse effects from the drugs used. Six trials for preeclampsia were conducted on 663 participants, with only 1 adverse drug effect reported. Three trials each were conducted on urinary tract infections and gestational diabetes mellitus (115 and 656 participants, respectively) without any adverse drug effects reported. One trial each focused on anemia, dystocia, and placentation disorders (80, 1003, and 14 participants, respectively) without any adverse drug effects reported. The trials reported minimal adverse drug effects, suggesting potential effectiveness and safety in managing these complications. While the trials mentioned minimal adverse effects, close monitoring and individualized patient care are essential, as are evaluating the risk-benefit ratio and the specific circumstances of each patient.",
+        "pmid": "40035917",
+        "title": "The effect of oral nutrition on diabetic ketoacidosis resolution time: Retrospective Cohort study.",
+        "abstract": "Diabetic ketoacidosis (DKA) is a serious disease that requires urgent and aggressive intervention. Although the medical treatments and protocols are well established, the role of oral nutrition during DKA treatment remains unclear. We aimed to evaluate the effect of oral nutritional status on the resolution rate of DKA. This retrospective cohort study is a single-centre study consisting of patients who were admitted with a diagnosis of DKA and were followed up in the ward. Patients were divided into two groups based on their oral nutrition status. The first group consisted of patients who received open oral nutrition during DKA treatment. The second group consisted of patients whose oral feeding was stopped until DKA resolved. Factors such as diabetes-related characteristics, DKA resolution time, and length of hospital stay were compared between the groups. The Chi-square test and Mann-Whitney U test were used for comparisons between groups. Of the 51 DKA patients evaluated, 29 were in the open oral feeding group, while there were 22 patients in the oral feeding stopped group. The recovery time for DKA was 9.9\u2009\u00b1\u20099.1\u2009h in the oral nutrition group and 20.2\u2009\u00b1\u200913.7\u2009h in the oral nutrition stopped group (p\u2009<\u20090.001). The mean length of hospital stay was 5.9\u2009\u00b1\u20093.3 days in the oral nutrition group and 7.4\u2009\u00b1\u20095.9 days in the oral nutrition stopped group (p\u2009=\u20090.346). The mean anion gap normalization time was 12.5\u2009\u00b1\u20098.6\u2009h in the open oral feeding group and, 22.6\u2009\u00b1\u200914\u2009h in the oral feeding stopped group (p\u2009<\u20090.001). Oral nutrition until DKA resolves allows the patient to recover more quickly and have a shorter hospital stay. These findings suggest a relationship between oral nutrition and faster DKA recovery.",
         "authors": [
-            "Rawan F Allehyani",
-            "Atheer A Alsehli",
-            "Raghad Z Saggat",
-            "Mohammed M Aldurdunji",
-            "Nasser M Alorfi"
+            "Ba\u015fak Can",
+            "Zeynep Karaali"
         ],
-        "journal": "Medicine",
-        "publication_date": "Unknown",
-        "doi": "10.1097/MD.0000000000041322",
-        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/39889198/"
-    },
-    {
-        "pmid": "39889189",
-        "title": "Traditional Chinese medicine for premature ventricular contraction caused by obstructive sleep apnea: A case report and literature review.",
-        "abstract": "Premature ventricular contraction (PVC) is a common type of arrhythmia, and obstructive sleep apnea (OSA) is a common trigger for this condition. Some patients still have PVC, even if ventilation is improved by wearing a respirator. Traditional Chinese medicine (TCM) has a long history of arrhythmia treatment, and this is the first report of a patient with PVC caused by OSA treated with TCM. Twenty-four-hour Holter showed that the number of PVCs decreased from 8968 to 0 before and after TCM treatment, and discomfort symptoms disappeared completely. A 37-year-old middle-aged man, with no history of hypertension, diabetes, hyperlipidemia, or other underlying diseases, had been suffering from OSA for over 1 year and currently uses a respirator to sleep. He was diagnosed with PVC at Beijing Anzhen Hospital 1 year ago and had been taking propafenone hydrochloride tablets following the physician's advice, but palpitation had not been relieved. The patient did not consider surgery and hoped to take TCM to treat the palpitations. The patient was diagnosed with PVC. After excluding other factors that could cause PVC, it was ultimately considered that the patient's PVC was related to OSA. The patient visited Xiyuan Hospital on December 5, 2023, on the basis of existing Western medicine and TCM, using the modified Huanglian Wendan Decoction. After taking TCM for 21 days, the Holter tests were conducted again. The results showed that the number of PVCs decreased from 8968 to 0 within 24 hours. Meanwhile, his palpitations were relieved, and the dosage of propafenone hydrochloride tablets was halved. After 7 days, he did not experience any discomfort; therefore, propafenone hydrochloride tablets were discontinued and TCM was exclusively administered. He received 7 additional courses in TCM. During the final consultation on April 23, 2024, the patient reported no discomfort, and snoring improved. After treatment with TCM, the patient's palpitations disappeared completely and snoring improved, which proved that TCM can treat PVC caused by OSA. To verify this conclusion, more high-quality research is necessary to establish the efficacy and underlying mechanisms of TCM in treating PVC caused by OSA.",
-        "authors": [
-            "Qing-Qing Yue",
-            "Yi-Fang Hao",
-            "Ting Li",
-            "Han-Ying Miao",
-            "Bing-Chang Chen",
-            "Sheng-Yao Li"
-        ],
-        "journal": "Medicine",
-        "publication_date": "Unknown",
-        "doi": "10.1097/MD.0000000000041206",
-        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/39889189/"
-    },
-    {
-        "pmid": "39888842",
-        "title": "A herbal approach to diabetic cardiomyopathy: moringa, ginger, and garlic unveiled.",
-        "abstract": "Chronic inflammation contributes to myocardial complications in diabetes, marked by tissue fibrosis, necrosis, and apoptosis.  and  have individually demonstrated efficacy in diabetes management. In this study, it is hypothesised that a combination of these herbs in a polyherbal formulation would protect against diabetic cardiomyopathy. Diabetes was induced in male Sprague Dawley rats using strepetozotocin at a single dose of (55 mg/kg of body weight,  in citrate buffer. Polyherbal formulation was administred as a treatment for 8 weeks. Rats receiving treatment with polyherbal formulation showed decreased blood glucose, plasma creatinine, Blood Urea Nitrogen, Creatine kinase- myocardial band, lactate dehydrogenase, aspartate aminotransferase, Troponin-I, NADPH oxidase 4, and Ras-related C3 botulinum toxin substrate-1. In contrast, Superoxide dismutase, catalase, and glutathione enzyme activities were increased. Thus, a polyherbal formulation containing herbs was able to attenuate the progression of diabetes mellitus and diabetic cardiomyopathy.",
-        "authors": [
-            "Kaushal Shah",
-            "Manjiri Jalgaonkar",
-            "Aditi Vyas",
-            "Gaurav Doshi",
-            "Yogesh A Kulkarni",
-            "Alok D Singh",
-            "Manisha J Oza"
-        ],
-        "journal": "Archives of physiology and biochemistry",
+        "journal": "Endocrine",
         "publication_date": "2025",
-        "doi": "10.1080/13813455.2025.2459871",
-        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/39888842/"
+        "doi": "10.1007/s12020-025-04204-z",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035917/"
     },
     {
-        "pmid": "39888728",
-        "title": "The Role of Serum Free Fatty Acids in Endothelium-Dependent Microvascular Function.",
-        "abstract": "Elevated serum free fatty acid (FFA) concentration is associated with insulin resistance and is a hallmark of metabolic syndrome. A pathological feature of insulin resistance is impaired endothelial function. To investigate the effect of FFA reduction with either acipimox, a nicotinic acid derivative that impairs lipolysis, or salsalate, a salicylate that reduces basal and inflammation-induced lipolysis, on insulin-mediated endothelium-dependent vasodilation. This was a post hoc, combined analysis of two randomised, double-blind, placebo-controlled crossover trials. Sixteen subjects were recruited (6 with metabolic syndrome and 10 controls) and randomised to acipimox 250\u2009mg orally every 6\u2009h for 7\u2009days or placebo. Nineteen subjects were recruited (13 with metabolic syndrome and 6 controls) and randomised to receive salsalate 4.5\u2009g/day for 4\u2009weeks or placebo. The primary outcome was the association between FFA concentration and insulin-mediated vasodilation, measured by venous-occlusion strain-gauge plethysmography at baseline and following FFA modulation with the study drugs. At baseline, FFA concentration (R\u2009=\u2009-0.35, p\u2009=\u20090.043) and insulin sensitivity (HOMA-IR: R\u2009=\u2009-0.42, p\u2009=\u20090.016, Adipo-IR: R\u2009=\u2009-0.39, p\u2009=\u20090.025) predicted insulin-mediated vasodilation. FFA levels were significantly reduced after drug pretreatment (0.604 vs. 0.491\u2009mmol/L, p\u2009=\u20090.036) while insulin levels, insulin sensitivity and inflammatory markers were unchanged. Despite a reduction in circulating FFA with drug therapy, neither insulin-stimulated vasodilation nor insulin sensitivity improved. Short-term reduction of FFA concentration does not improve insulin-stimulated vasodilation in patients with metabolic syndrome. ClinicalTrials.gov identifier: NCT00759291 and NCT00760019 (formerly NCT00762827).",
+        "pmid": "40035705",
+        "title": {
+            "i": "via",
+            "#text": "Unnatural foldamers as inhibitors of A\u03b2 aggregation  stabilizing the A\u03b2 helix."
+        },
+        "abstract": "Protein aggregation is a critical factor in the development and progression of several human diseases, including Alzheimer's disease (AD), Huntington's disease, Parkinson's disease, and type 2 diabetes. Among these conditions, AD is recognized as the most prevalent progressive neurodegenerative disorder, characterized by the accumulation of amyloid-beta (A\u03b2) peptides. Neuronal toxicity is likely driven by soluble oligomeric intermediates of the A\u03b2 peptide, which are thought to play a central role in the cascade leading to neuronal dysfunction and cognitive decline. In response, numerous therapeutic strategies have been developed to inhibit A\u03b2 oligomerization, as this is believed to delay the formation of A\u03b2 protofibrils. Traditional research has focused on discovering small molecules or peptides that antagonize A\u03b2 oligomerization. However, recent studies have explored an alternative approach-developing ligands that stabilize the A\u03b2 peptide in its \u03b1-helical conformation. This stabilization is thought to alter the peptide's natural aggregation kinetics, shifting it away from toxic oligomer formation and toward less harmful states. Crucially, by maintaining A\u03b2 in this \u03b1-helical form, these ligands have been shown to rescue the peptide's associated cytotoxicity, offering a promising mechanism to mitigate the detrimental effects of A\u03b2 in AD. While challenges remain, including treatment costs and side effects like ARIA (amyloid-related imaging abnormalities), anti-A\u03b2 drug development represents a major advancement in Alzheimer's research and therapeutic options. This brief review aims to highlight the development and potential of these \u03b1-helix-stabilizing ligands as antagonists of A\u03b2 aggregation, focusing on their interactions with A\u03b2 and how these compounds induce and maintain secondary structural changes in the A\u03b2 peptide. Notably, this innovative strategy holds promise beyond A\u03b2-related pathology, as the fundamental principles could be applied to other amyloidogenic proteins implicated in various amyloid-related diseases, potentially broadening the scope of therapeutic intervention for multiple neurodegenerative conditions.",
         "authors": [
-            "Alexander E Sullivan",
-            "Meaghan C S Courvan",
-            "Aaron W Ada",
-            "David H Wasserman",
-            "Kevin D Niswender",
-            "Emily M Shardelow",
-            "Emily K Wells",
-            "Quinn S Wells",
-            "Matthew S Freiberg",
-            "Joshua A Beckman"
+            "Heng Liu",
+            "Xue Zhao",
+            "Jianyu Chen",
+            "Yu Yu Win",
+            "Jianfeng Cai"
         ],
-        "journal": "Endocrinology, diabetes & metabolism",
+        "journal": "Chemical communications (Cambridge, England)",
+        "publication_date": "2025",
+        "doi": "10.1039/d4cc05280c",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035705/"
+    },
+    {
+        "pmid": "40035617",
+        "title": "PA1b-like peptides alleviate mitochondrial dysfunction induced by glucose toxicity through interaction with VDAC1 in \u03b2-cells.",
+        "abstract": "No abstract available",
+        "authors": [
+            "Huizhong Huang",
+            "Xinyu Zeng",
+            "Liying Zhang",
+            "Hongchang Cheng",
+            "Kanghong Hu",
+            "Xiaoke Shang",
+            "Chenguang Yao"
+        ],
+        "journal": "Food & function",
+        "publication_date": "2025",
+        "doi": "10.1039/d5fo00054h",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035617/"
+    },
+    {
+        "pmid": "40035611",
+        "title": "End Stage Kidney Disease Treatment Options.",
+        "abstract": "As patients progress through chronic kidney disease, they are eventually faced with the reality of having to choose which type of treatment they want when their kidneys are no longer functioning enough to sustain them - when they have reached end stage kidney disease. These discussions with patients about options should start early and include the whole multidisciplinary team. Treatment options in clude transplant, peritoneal dialysis, hemodialysis, and supportive care.",
+        "authors": [
+            "Rachael Buening",
+            "Sheila Deziel"
+        ],
+        "journal": "Nephrology nursing journal : journal of the American Nephrology Nurses' Association",
         "publication_date": "Unknown",
-        "doi": "10.1002/edm2.70031",
-        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/39888728/"
+        "doi": "No DOI available",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035611/"
+    },
+    {
+        "pmid": "40035362",
+        "title": "Testosterone Modulation of Muscle Transcriptomic Profile During Lifestyle Therapy in Older Men with Obesity and Hypogonadism.",
+        "abstract": "Testosterone replacement therapy (TRT) added to lifestyle therapy can mitigate weight-loss-induced reduction of muscle mass and bone mineral density (BMD) in older men with obesity and hypogonadism. To investigate the molecular mechanisms underlying the attenuation of muscle and BMD loss in response to TRT during intensive lifestyle intervention in this high-risk older population. Among 83 older (\u2265\u200965 years) men with obesity (BMI\u2009\u2265\u200930\u2009kg/m) and hypogonadism (early AM testosterone persistently <\u2009300\u2009ng/dL) associated with frailty (Modified Physical Performance Test score \u2264\u200931) randomized into 26-week lifestyle therapy plus testosterone (LT+TRT) or placebo (LT+Pbo) in the LITROS trial, 38 underwent serial muscle biopsies for the muscle transcriptomics substudy. Despite similar ~10% weight loss, lean body mass and thigh muscle volume decreased less in LT+TRT than LT+Pbo (-2% vs. -4%, respectively; p\u2009=\u20090.04). Hip BMD was preserved in LT+TRT compared with LT+Pbo (0.4% vs. -1.3%; p\u2009=\u20090.03). Muscle strength increased similarly in LT+TRT and LT+Pbo (23% vs. 24%; p\u2009=\u20090.95). Total testosterone increased more in LT+TRT than LT+Pbo (133% vs. 32%; p\u2009=\u20090.005). Based on Next Generation Sequencing, of the 39\u2009160 and 39\u2009115 genes detected in LT+TRT and LT+Pbo, respectively, 195 were differentially expressed in LT+TRT and 158 in LT+Pbo. Gene Ontology enrichment analyses revealed that in LT+TRT, just four muscle-related pathways (muscle organ development, muscle organ morphogenesis, regulation of skeletal muscle contraction, muscle atrophy) were downregulated and one pathway (muscle system process) was upregulated. In contrast, in LT+Pbo, nine muscle-related pathways (muscle system process, muscle tissue development, muscle organ development, skeletal muscle tissue development, skeletal muscle organ development, skeletal muscle cell differentiation, muscle organ morphogenesis, response to stimuli involved in regulation of muscle adaptation, muscle atrophy) and one pathway related to bone (bone mineralization involved in bone maturation) were downregulated. Muscle system process was upregulated in LT+TRT but downregulated in LT+Pbo. RT-PCR analyses showed that LT+TRT resulted in a higher expression of MYOD1 (p\u2009=\u20090.02) and WNT4 (p\u2009=\u20090.02), key genes involved in muscle and bone metabolism, respectively, compared with LT+Pbo. We also observed significantly higher mRNA expression of MYBPH (p\u2009=\u20090.006), SCN3B (p\u2009=\u20090.02) and DSC2 (p\u2009=\u20090.01), genes involved in the muscle system process, in response to LT+TRT compared with LT+Pbo. The addition of TRT to lifestyle therapy mitigates the weight-loss-induced reduction of muscle mass and BMD via countering the weight-loss-induced downregulation of genes involved in muscle and bone anabolism.",
+        "authors": [
+            "Viola Viola",
+            "Tagari Samanta",
+            "Maria Liza Duremdes Nava",
+            "Alessandra Celli",
+            "Reina Armamento-Villareal",
+            "Ngoc Ho Lam Nguyen",
+            "Georgia Colleluori",
+            "Yoann Barnouin",
+            "Nicola Napoli",
+            "Clifford Qualls",
+            "Benny Abraham Kaipparettu",
+            "Dennis T Villareal"
+        ],
+        "journal": "Journal of cachexia, sarcopenia and muscle",
+        "publication_date": "Unknown",
+        "doi": "10.1002/jcsm.13697",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035362/"
+    },
+    {
+        "pmid": "40035273",
+        "title": "Antidiabetic Effects and Mechanisms of Action of Uncaria gambir Roxb. in Diabetic Sprague-Dawley Rats.",
+        "abstract": "The antidiabetic properties of Uncaria gambir are not yet fully understood, particularly concerning how it affects diabetic animal models. Further investigation in this aspect is pivotal before initiating clinical evaluations. This study aimed to investigate the antidiabetic activity of U. gambir and how it influences blood glucose levels in diabetic Sprague-Dawley rats. In this study, 28 rats were divided into 7 groups. The groups were as follows: a nondiabetic rat group, a nondiabetic rat group given U. gambir, a diabetic rat group, a diabetic rat group given glibenclamide, and 3 diabetic rat groups given U. gambir at 3 doses (200, 300, and 400 mg/kg). Diabetes was induced using streptozotocin (50 mg/kg) given by intraperitoneal injection. Blood glucose levels were measured weekly, and the animals were euthanized at the end of the experiment. Intracardiac blood and tissues such as the pancreas, liver, and skeletal muscle were collected for further analysis. The results showed that administering U. gambir to diabetic rats resulted in significantly lower blood glucose levels than untreated diabetic rats. U. gambir has a complex mechanism to reduce blood glucose levels. including increase of insulin production, preservation of the islets and pancreatic \u03b2 cells, and optimization of glycogenesis, as reflected in a significant increase in liver glycogen levels. These findings suggest that U. gambir's multicompound and multitarget capabilities in controlling blood glucose levels may have utility for treatment of diabetes.",
+        "authors": [
+            "Indah Fajarwati",
+            "Dedy D Solihin",
+            "Tutik Wresdiyati",
+            "Irmanida Batubara",
+            "Sela S Mariya"
+        ],
+        "journal": "Journal of the American Association for Laboratory Animal Science : JAALAS",
+        "publication_date": "2025",
+        "doi": "10.30802/AALAS-JAALAS-24-117",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035273/"
+    },
+    {
+        "pmid": "40035266",
+        "title": "Cost-utility analysis of empagliflozin on chronic kidney disease progression in Thailand.",
+        "abstract": "The prevalence of chronic kidney disease (CKD) in Thailand is high and kidney disease progression remains a problem. Empagliflozin has been known to be used to slow CKD progression, but its accessibility remains limited. This study aimed to assess the cost-utility of empagliflozin for CKD progression in Thailand. A state-transition model was developed consisting of eight health states: five eGFR health states (G2, G3a, G3b, G4 and G5), dialysis, kidney transplantation and death. Empagliflozin 10\u2009mg was assessed as an add-on treatment to standard of care (SoC). The efficacy of empagliflozin was derived from the EMPA-KIDNEY trial, while other inputs were obtained from a comprehensive literature review. The incremental cost-effectiveness ratio (ICER) per quality-adjusted life year (QALY) was calculated. A probabilistic sensitivity analysis (PSA) was performed to explore uncertainties. Empagliflozin could improve QALYs by 0.62 and 0.71 for patients with CKD without and with diabetes mellitus (DM) compared with SoC, respectively. However, it required higher total lifetime costs of 77,966 Thai baht (THB) and 59,454 THB for patients with CKD without and with DM, respectively. The ICER for CKD without DM was 126,201 THB/QALY, while the ICER for CKD with DM was 83,473 THB/QALY. The PSA indicated that empagliflozin had a 64.00% probability of being cost-effective for CKD without DM and an 89.18% probability for CKD with DM. An important limitation was that the treatment effects of empagliflozin were derived from the EMPA-KIDNEY, which was conducted in DM patients and assumed to be the same for non-DM patients because of the limited evidence in non-DM patients. At the current willingness-to-pay threshold of 160,000 THB/QALY, empagliflozin was cost-effective for treating patients with CKD without or with DM.",
+        "authors": [
+            "Piyameth Dilokthornsakul",
+            "Paweena Susantitaphong",
+            "Bancha Satirapoj",
+            "Wanchana Singhan",
+            "Vuddhidej Ophascharoensuk"
+        ],
+        "journal": "Journal of medical economics",
+        "publication_date": "2025",
+        "doi": "10.1080/13696998.2025.2474887",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035266/"
+    },
+    {
+        "pmid": "40035254",
+        "title": "Sodium-Glucose Cotransporter 2 Inhibitors Significantly Lower the Cardiac Electrophysiological Balance Index in Type 2 Diabetes Patients.",
+        "abstract": "Sodium-glucose cotransporter 2 (SGLT2) inhibitors, a novel group of oral antidiabetic drugs, have demonstrated cardioprotective benefits and positive metabolic effects in patients with diabetes mellitus (DM). The cardiac electrophysiological balance index (ICEB) is an eletrocardiographic ratio that provides information about the equilibrium between left ventricular depolarization and repolarization duration, offering valuable insights into the predisposition to ventricular arrhythmias. The aim of this study is to analyze the potential impact of SGLT2 inhibitors on ICEB. Patients were prospectively selected from a pool of 2,789 consecutive type 2 DM patients. After exclusions, 174 patients formed the monotherapy group, and 143 age- and sex-matched patients who were switched to SGLT2 inhibitor combination therapy constituted the combination therapy group. All treatment changes were supervised by endocrinologists blinded to the patient groups. Baseline and six-month electrocardiogram (ECG) data of both groups were analyzed. ICEB was defined as QT/QRS, and ICEBc as QTc/QRS. Although there was no statistically significant difference between the monotherapy and combination therapy groups in terms of baseline ECG parameters, QT (385.05 +- 13.21 vs. 372.32 +- 4.32; P < 0.001), QTc (409.24 +- 8.17 vs. 383.72 +- 7.24; P < 0.001), ICEB (4.15 +- 0.51 vs. 4.03 +- 0.54; P = 0.004), and ICEBc (4.40 +- 0.75 vs. 4.16 +- 0.61; P < 0.0001) values at the six-month mark were significantly lower in the SGLT2 inhibitor group. SGLT2 inhibitors significantly lower ICEB and ICEBc, potentially reducing ventricular susceptibility to arrhythmias as early as six months into treatment for diabetic patients.",
+        "authors": [
+            "Emrah \u00d6zdemir",
+            "Murat Ziyrek",
+            "Esra D\u00f6nmez",
+            "Sevgi \u00d6zcan",
+            "Orhan \u0130nce",
+            "Ceyla Zeynep \u00c7olako\u011flu Gevher",
+            "Bahar \u00d6zdemir",
+            "Ertu\u011frul Okuyan"
+        ],
+        "journal": "Turk Kardiyoloji Dernegi arsivi : Turk Kardiyoloji Derneginin yayin organidir",
+        "publication_date": "Unknown",
+        "doi": "10.5543/tkda.2024.07280",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035254/"
+    },
+    {
+        "pmid": "40035251",
+        "title": "Predictors of Absence of Depression in Hospitalized Patients with Heart Failure and Reduced Ejection Fraction.",
+        "abstract": "Mental health is directly related to mortality in heart failure (HF) patients. Nevertheless, depression is often underdiagnosed and undertreated in HF patients. We aimed to determine the parameters associated with the absence of depression in hospitalized HF patients. A total of 143 hospitalized HF patients with reduced ejection fraction were included in this study. The Patient Health Questionnaire-9 (PHQ-9) scale was used for screening depression symptoms. HF patients who scored < 5, defined as patients without depression, were compared with HF patients who scored \u2265 5. Depression was absent in 65 (45.5%) of the 143 hospitalized HF patients. Diabetes mellitus (P = 0.006) and beta-blocker usage (P = 0.011) were less frequent; New York Heart Association (NYHA) class (P = 0.003) and B-type natriuretic peptide (BNP) levels (P = 0.006) were lower; and estimated glomerular filtration rate (eGFR) levels (P = 0.038) were higher in HF patient without depression in our study. In multivariate analysis, NYHA class [P = 0.003, odds ratio (OR) (95% confidence interval [CI]) 0.426 (0.242-0.751)] and beta-blocker usage [P = 0.045, OR (95% CI) 0.288 (0.085-0.972)] were independently correlated with the absence of depression in hospitalized HF patients. Correlation analysis revealed a significant positive correlation between NYHA class and PHQ-9 score (r = 0.258, P = 0.002). In our study, 45.5% of the hospitalized HF patients had no depression. Diabetes mellitus and beta-blocker usage were less frequent, NYHA class and BNP levels were lower, and eGFR levels were higher in HF patients without depression. Additionally, NYHA class and beta-blocker usage were independent predictors of the absence of depression in hospitalized HF patients. This study highlights the need for physicians to recognize the strong interaction between depression and HF and to incorporate regular depression screening into clinical practice.",
+        "authors": [
+            "Onur Argan",
+            "Serdar Bozyel"
+        ],
+        "journal": "Turk Kardiyoloji Dernegi arsivi : Turk Kardiyoloji Derneginin yayin organidir",
+        "publication_date": "Unknown",
+        "doi": "10.5543/tkda.2024.67284",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035251/"
+    },
+    {
+        "pmid": "40035222",
+        "title": "An overview of insulin therapy for the non-specialist.",
+        "abstract": "Nearly all health professionals, whatever their practice or speciality, now have contact with a significant number of insulin-using people with diabetes. People with type 1 diabetes are nearly universally managed on more complex insulin regimens, increasingly with complex support technology, and with some understanding of the concepts underlying these needed by anyone with responsibility for other aspects of their health care. People with type 2 diabetes usually come to insulin therapy in time, now with a prevalence for insulin administration of \u224850%, thanks to improved management of associated health risks giving longer life expectancy. But while some understandings have simplified the usual approach (basal insulin, self-adjustment dose algorithms), the advent of other medical products offering cardio-renal protection, the use of insulin in combination with these, and the marketing of novel insulin analogues and biosimilars, have all added complexity to clinical decision making. However for the insulin user in the mainstream of care (ambulatory diabetes services in primary and secondary care) the broad principles of choice and management of insulin therapy are fairly easily applied. In the current article, the complexity is dissected and addressed, some of the stigma around insulin therapy is neutralised, and the fundamental approach in regular care drawn into focus. PLAIN LANGUAGE SUMMARY: Insulin therapy is used in their diabetes lifetime by nearly all people with type 2 diabetes (T2DM), as well as in all people with type 1 diabetes (T1DM). In T2DM this is in the context of the usual progression of islet B-cell secretory failure, but also very often in the context of other conditions, from cancer or steroid therapy to acute arterial events or major surgery. Its prescription in these circumstances means that, in pharmaco-epidemiological studies, insulin use is invariably associated with poor health outcomes, but in a series of major RCTs of 5-15\u2009years duration no excess of vascular or oncological adverse health outcomes was found. Physiologically insulin secretion occurs in two scenarios, namely basal insulin at night and between meals (\u224850%), and in short (\u22484\u2009h) bursts with meals (\u224850%). The former suppresses liver glucose production, which in its absence causes plasma glucose to rise threefold to around 12\u2009mmol/l (but much higher if metabolic stress or with sugar-containing drinks). Meal-time insulin secretion in addition promotes glucose storage in skeletal muscle. People with T1DM, having no endogenous insulin secretion, thus require a multiple injection regimen (basal + meal-time), or pumped insulin, often now moderated by continuous glucose monitoring (CGM). Basal and meal-time preparations of pharmaceutical insulin analogues are also used for T2DM, with GLP-1RA and metformin usually continued. The starting regimen is normally basal only, usually with insulin glargine (100\u2009U/ml), originator or biosimilar, while insulin degludec or glargine 300\u2009U/ml can have advantage as basal insulins where true 24-h cover is found to be needed. Weekly insulins (developmental or marketed) may have a role in injection acceptability in T2DM, at a cost of some increase in hypoglycaemia. In ambulatory care a meal-time insulin analogue, originator or biosimilar, is added when required, often after some years on basal insulin. Meal insulins are also used in insulin pumps. Hypoglycaemia is a significant issue in T1DM, limiting insulin dosing, but can be helped by CGM, with or without pumps, and careful dose adjustment. It is a much lesser issue in T2DM, until meal-time insulins are introduced, or in people of thinner phenotype, whence again expertise in dose adjustment may be needed. Body weight gain with insulin is usually modest, particularly if basal insulin is begun appropriately before glycosuria has influenced calorie balance. In mainstream ambulatory care the broad principles of insulin therapy are fairly easily applied, the main resources being team familiarity with a basal insulin (glargine/biosimilar), a finger-prick glucose-monitoring system, basic patient education on use of these, and time to supervise dose titration. Beginning with a fixed dose (e.g. 10\u2009U/day) and increasing by 2 U twice a week is simple, but may take months of persistent input to reach target fasting plasma glucose levels. In conclusion, insulin is a usual therapy in both T1DM and T2DM, and in the latter initially at least is fairly easily applied, in combination with other glucose-lowering agents. However it can be more challenging in the context of the technology used in T1DM, once meal-time insulin is added to basal in T2DM, and when dose requirements are complex and unstable in conjunction with other medical conditions.",
+        "authors": [],
+        "journal": "Diabetes, obesity & metabolism",
+        "publication_date": "2025",
+        "doi": "10.1111/dom.16280",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035222/"
+    },
+    {
+        "pmid": "40035216",
+        "title": "Investigation of Food Marking and Contamination Behaviors Informs Feeding Practice in Research Colonies of Laboratory Opossums.",
+        "abstract": "The laboratory opossum, Monodelphis domestica, serves as a critical marsupial model in biomedical research. Proper feeding approaches are essential for promoting animal growth and wellbeing. In this study, we systematically evaluated food scattering and potential food contamination from feces across 4 feeding methods: direct placement of food pellets on bedding and using 3 different types of containers. We conducted timed daily observations of food scattering and marking behaviors in 22 animals, capturing images by photograph at specific intervals over the course of a week. Body weight was measured before and after the trial. Our findings revealed that the containers did not prevent food scattering behaviors, as evidenced by comparable survival curves for food scattering across all methods (P > 0.05, log-rank test). Although the paper tray and ceramic dish delayed the occurrence of food marking by feces, indicated by a significant extension in the time to marking events (P = 0.009 and P < 0.001, respectively), these containers introduced new animal welfare concerns. The paper tray increased bleeding incidents in digits and paw pads nearly 8-fold (P = 0.0002), presumably due to sharp edges. The ceramic dish was associated with urine marking, and small but statistically significant weight loss (0.7%, P < 0.05). By 144 h, all cages showed food contamination regardless of the feeding method. The results suggest that containers provide minimal benefit in preventing food contamination, and some types of containers may pose health risks. Therefore, we propose that placing food pellets directly on the bedding, a practice used for 45 y of laboratory opossum maintenance, is acceptable for promoting optimal health and operational efficiency for this species. Our results fill a significant gap in care practices and offer insights into optimal colony management for this important research model.",
+        "authors": [
+            "Abbigail L Lanier",
+            "Bettina Schemera",
+            "Patricia E Rynders",
+            "Trisha Kendall",
+            "Myra Petrofski",
+            "Jennifer Spooner",
+            "Paul B Samollow",
+            "John L VandeBerg",
+            "Xu Wang"
+        ],
+        "journal": "Journal of the American Association for Laboratory Animal Science : JAALAS",
+        "publication_date": "2025",
+        "doi": "10.30802/AALAS-JAALAS-24-060",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035216/"
+    },
+    {
+        "pmid": "40035205",
+        "title": "Regional trends and disparities in newer GLP1 receptor agonist initiation among real-world adult patients eligible for obesity treatment.",
+        "abstract": "To characterize trends in the initiation of newer anti-obesity medications (AOMs) and determine factors associated with their use among obese/overweight populations. This study utilized electronic health record data from OneFlorida+ (2015-2024). Adults eligible for AOMs were included, defined as having a body mass index (BMI) \u226530\u2009kg/m or a BMI of 27-29.9\u2009kg/m with at least one obesity-related comorbidity. The primary outcome was the initiation of newer AOMs, specifically glucagon-like peptide-1 receptor agonists (GLP-1 RAs) including liraglutide, semaglutide and tirzepatide. Trends across years were examined, and a multivariable logistic regression identified sociodemographic, clinical and healthcare utilization factors associated with AOM initiation. Of 319,949 adults, 1.8% initiated newer AOMs. Semaglutide accounted for 77.9% of initiations, tirzepatide 19.7% and liraglutide 17.8%. Initiation trends showed liraglutide uptake peaked at 5% in 2018 but declined afterward, while semaglutide and tirzepatide uptake increased exponentially since 2022. Odds of initiation were lower for Black (aOR [95% CI]: 0.87 [0.80-0.94]) and Hispanic (0.84 [0.78-0.91]) groups versus Whites, and for Medicaid (0.69 [0.63-0.76]) and uninsured (0.81 [0.74-0.87]) patients versus privately insured. Higher odds were associated with being female, middle-aged, having more outpatient visits and visiting endocrinologists. The initiation of newer AOMs among overweight and obese populations remains low, but uptake has increased exponentially since 2022. Our findings reveal significant disparities in obesity care, highlighting the importance of addressing inequities in AOM access to improve obesity outcomes.",
+        "authors": [
+            "Rotana M Radwan",
+            "Yao An Lee",
+            "Pareeta Kotecha",
+            "Davene R Wright",
+            "Inmaculada Hernandez",
+            "Ronald Ramon",
+            "William T Donahoo",
+            "Yong Chen",
+            "John M Allen",
+            "Jiang Bian",
+            "Jingchuan Guo"
+        ],
+        "journal": "Diabetes, obesity & metabolism",
+        "publication_date": "2025",
+        "doi": "10.1111/dom.16318",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035205/"
+    },
+    {
+        "pmid": "40035195",
+        "title": "Genetic evidence for the effects of glucokinase activation on frailty-related outcomes: A Mendelian randomisation study.",
+        "abstract": "We aimed to use the Mendelian randomisation (MR) design to investigate the potential causal effects of glucokinase (GK) activation on frailty-related outcomes and to explore the potential mediating effects of metabolic and inflammatory biomarkers. Seventeen independent single-nucleotide polymorphisms (SNPs) located within the GCK gene and significantly correlated with the glycated haemoglobin (HbA) level were used as genetic proxies for the effect of GK activation. We employed two-sample MR analysis to assess the relationship between genetically proxied GK activation and multifactorial frailty-related outcomes (frailty index, grip strength, walking pace, appendicular lean mass [ALM] and telomere length) We also explored the potential mediating effects using two-step MR. Genetically proxied GK activation was significantly associated with a lower frailty index (beta: -0.161 per 1% decrease in HbA level due to GK activation, 95% confidence interval: -0.282 to -0.040, false discovery rate-adjusted p\u2009=\u20090.011). Additionally, GK activation showed significant associations with increased grip strength, higher ALM, faster walking pace and longer telomere length. GK activation also demonstrated a significant indirect effect on total grip strength and telomere length by reducing C-reactive protein levels (proportion of mediation: 6.79% to 8.21%). Our study provides genetic evidence supporting the causal effects of GK activation on lowering the risk of frailty. These findings suggest that GK activators (GKAs) may aid in the management of frailty and sarcopaenia in people with diabetes; however, future randomized controlled trials are necessary to validate these results and establish their clinical applicability.",
+        "authors": [
+            "Rong Hua",
+            "Mai Shi",
+            "Elaine Chow",
+            "Aimin Yang",
+            "Yin Ting Cheung"
+        ],
+        "journal": "Diabetes, obesity & metabolism",
+        "publication_date": "2025",
+        "doi": "10.1111/dom.16312",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035195/"
+    },
+    {
+        "pmid": "40035158",
+        "title": "Proactive inpatient diabetes service model of care observed to decrease severe hyperglycaemia and hypoglycaemia in a 'real-world' Australian hospital setting.",
+        "abstract": "Hyperglycaemia and hypoglycaemia are associated with adverse outcomes in hospitalised patients. A cluster-randomised trial at an Australian quaternary hospital showed that an early intervention model of inpatient diabetes care decreased hyperglycaemia. This model of care was later implemented as a clinical service at Northern Health, where the inpatient diabetes service (IDS) performed virtual glycaemic surveillance and provided proactive bedside consultations for patients with unstable glycaemia. To assess glycaemic and clinical outcomes of this IDS model of care in a real-world hospital setting. We compared hospital-wide cross-sectional cohorts of all inpatients with diabetes identified on two census days: in November 2017 (pre-IDS implementation) and in March 2021 (with IDS care in place). Bedside diabetes consultations, capillary glucose measurements and glycaemic treatment plans were compared. Standard glucometric analyses were performed on capillary glucose measurements to assess the incidence of hyperglycaemia and hypoglycaemia. The proactive IDS model significantly increased bedside consultations by the diabetes team (6% pre-IDS vs 47% with IDS care) and increased inpatient insulin prescribing. Compared to the pre-IDS group (n =\u2009126), the IDS group (n =\u2009139) had a lower incidence of severe hyperglycaemia (patient-days with mean glucose >15\u2009mmol/L: 6.5% vs 4.5%, P =\u20090.03) and level 2 hypoglycaemia (patient-days with glucose <3 mmol/L: 1.1% vs 0.2%, P = 0.01). In patients younger than 75 years with admission HbA1c >7.0%, more patients had diabetes treatment intensification at hospital discharge with IDS care. Following implementation of a proactive IDS model of care, a lower incidence of severe hyperglycaemia and hypoglycaemia was observed.",
+        "authors": [
+            "Karen Van",
+            "Xiao Wei Ma",
+            "Julie Loughran",
+            "Alexandra Brown",
+            "Sarah Lindsey",
+            "Henry Wong",
+            "Spiros Fourlanos",
+            "Suresh Varadarajan",
+            "Mervyn Kyi"
+        ],
+        "journal": "Internal medicine journal",
+        "publication_date": "2025",
+        "doi": "10.1111/imj.70018",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035158/"
+    },
+    {
+        "pmid": "40035110",
+        "title": "Recommendation to improve chronic kidney disease management guideline in primary healthcare, KwaZulu-Natal.",
+        "abstract": "The prevalence of chronic kidney disease (CKD) is high in KwaZulu-Natal (KZN), especially in individuals with risk factors such as HIV, diabetes mellitus and hypertension. Despite existing guidelines, the study identified multifactorial gaps in implementing CKD management measures at the primary healthcare (PHC) level. This leads to late-stage diagnoses and increased burdens on tertiary institutions, as identified in institutional statistics. The study was therefore conducted in four different settings: a tertiary hospital in Durban and three PHC centres across KZN (two urban centres and one in a township). The study's objective is to describe the perceptions of healthcare professionals on the management of CKD, in the PHC setting in KZN, South Africa. A qualitative, exploratory design involving healthcare professionals was adopted. Purposeful sampling was used. Open coding and conventional content analysis were adopted to analyse data. Findings revealed three overarching themes: (1) knowledge and awareness about existing guidelines, (2) fragmented system and a lack of clear guidelines and (3) implications of clear guidelines on patient care. Participants demonstrated diverse awareness of guidelines, revealing a need for continuous education. Participants expressed needs for continuous education and clear guidelines. The study highlights an urgent need to bridge the knowledge gap and establish a cohesive healthcare system to address the growing CKD burden in KZN effectively.Contribution:\u00a0The study emphasises the potential benefits of implementing clear guidelines to improve patient outcomes, early detection and appropriate interventions, thereby reducing the burden on tertiary facilities.",
+        "authors": [
+            "Verosha Ramkelawan",
+            "Pretty N Mbeje",
+            "Ntombifikile G Mtshali"
+        ],
+        "journal": "Curationis",
+        "publication_date": "2025",
+        "doi": "10.4102/curationis.v48i1.2623",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035110/"
+    },
+    {
+        "pmid": "40035065",
+        "title": {
+            "i": "Ziziphus lotus",
+            "#text": "Phytochemical Composition of  (L.) Lam and Its Impact on the Metabolic Syndrome: A Review."
+        },
+        "abstract": "No abstract available",
+        "authors": [
+            "Chaimae Alla",
+            "Amanat Ali",
+            "Afaf Mehiou",
+            "Youssra Salhi",
+            "Nourelhouda Bouanani",
+            "Abdelkhaleq Legssyer",
+            "Abderrahim Ziyyat"
+        ],
+        "journal": "Advances in pharmacological and pharmaceutical sciences",
+        "publication_date": "2025",
+        "doi": "10.1155/adpp/8276090",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40035065/"
+    },
+    {
+        "pmid": "40034999",
+        "title": "Management of ocular hypertension following intravitreal dexamethasone implant (ozurdex).",
+        "abstract": "To evaluate the impact of intravitreal dexamethasone implantation (Ozurdex) on ocular hypertension (OHT) development and characterize its management with non-invasive or minimally-invasive modalities. Chart review was performed for patients who received Ozurdex implantation between September 2016 to September 2023. Patients were excluded if they had ever been diagnosed with neovascular glaucoma or received a different intravitreal corticosteroid prior to Ozurdex injection or 6 months afterwards. The analysis included 171 Ozurdex implants (n\u00a0=\u00a061 patients, n\u00a0=\u00a074 eyes) for analysis. Patients were followed for an average of 326\u00a0\u00b1\u00a045 days. The rise in IOP was greatest 2- and 3-months post-injection. OHT occurred following 40 (23.3\u00a0%) Ozurdex implants. To lower IOP, medical drops were initiated after 17 (10.0\u00a0%) implants. Selective laser trabeculoplasty was performed in 2 (1.2\u00a0%) cases. Minimally-invasive glaucoma surgeries (MIGS) were utilized in 7 (4.1\u00a0%) cases. Patients >60 years old were at increased odds of developing OHT, whereas patients treated for retinal vein occlusion were less likely to develop OHT compared to patients treated for diabetic macular edema. Patient-specific characteristics, including age and treatment indication, may confer different risk for developing OHT following Ozurdex implantation. Ozurdex-induced OHT can be safely and effectively managed using a combination of medical therapy, laser trabeculoplasty, and angle-based MIGS. This study supports an increasing range of alternative approaches for addressing elevated IOP or postponing surgeries linked with higher risks.",
+        "authors": [
+            "Jason Xiao",
+            "Mary Qiu"
+        ],
+        "journal": "American journal of ophthalmology case reports",
+        "publication_date": "2025",
+        "doi": "10.1016/j.ajoc.2025.102274",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034999/"
+    },
+    {
+        "pmid": "40034984",
+        "title": "Photothermal-controlled microneedle for transdermal delivery of metal-phenolic nanozyme with staged multifunctions to accelerate healing of infected diabetic wounds.",
+        "abstract": "No abstract available",
+        "authors": [
+            "Dong Yan",
+            "Guoqi Cao",
+            "Yikai Gao",
+            "Yiping Wang",
+            "Wenqiang Zhang",
+            "Kun Wang",
+            "Shumei Mao",
+            "Chengde Li",
+            "Guangdong Zhou",
+            "Huitang Xia",
+            "Wufei Dai",
+            "Xiaoyu Yan",
+            "Yibing Wang"
+        ],
+        "journal": "Materials today. Bio",
+        "publication_date": "2025",
+        "doi": "10.1016/j.mtbio.2025.101554",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034984/"
+    },
+    {
+        "pmid": "40034883",
+        "title": "A Case of Incomplete Scimitar Syndrome in a Quinquagenarian Male.",
+        "abstract": "Scimitar syndrome is a rare congenital cardiopulmonary condition characterized by an anomalous pulmonary venous return from the right lung to the inferior vena cava (IVC). Most patients are diagnosed during infancy. Incomplete scimitar syndrome refers to a variant, where only a portion of the right lung drains abnormally into the IVC without associated cardiac defects. This case involves a 59-year-old man who presented with severe dizziness and hypertensive emergency with a blood pressure of 234/122 mmHg. His past medical history includes hypertension, cerebrovascular accident, prior myocardial infarction, and diabetes mellitus. A computed tomography (CT) without contrast demonstrated an aberrant connection of the right lower pulmonary vein to the IVC. The patient did not have associated congenital heart defects (incomplete scimitar syndrome). He was conservatively treated for his comorbidities with clinical improvement. Incomplete scimitar syndrome manifests late in adulthood as dyspnea during exertion secondary to the development of pulmonary hypertension. Hence, the\u00a0cornerstone of treatment for pulmonary hypertension is medical control.\u00a0By concentrating on the adult appearance of incomplete scimitar syndrome, long-term treatment and care may result from the identification of more individuals with incomplete scimitar syndrome as imaging methods advance and awareness increases. Future longitudinal outcome research for such rare conditions is crucial to fill up these information gaps.",
+        "authors": [
+            "Hudson P Franca",
+            "Priscila Sole",
+            "Sahar S Abdelmoneim",
+            "Matthew Razavian",
+            "Sabas Gomez"
+        ],
+        "journal": "Cureus",
+        "publication_date": "2025",
+        "doi": "10.7759/cureus.78315",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034883/"
+    },
+    {
+        "pmid": "40034881",
+        "title": "Thiamine Deficiency Masquerading As Guillain-Barr\u00e9 Syndrome.",
+        "abstract": "Thiamine (vitamin B1) deficiency may be associated with serious neurological manifestations, including peripheral neuropathy, paralysis, confusion, paresthesia, pain, dysarthria, and nystagmus. The primary etiology of thiamine deficiency is consumption of a diet deficient in thiamine. In the United States, the most common cause of thiamine deficiency is alcohol use disorder due to the poor dietary intake that is often associated with this diagnosis. Thiamine deficiency also develops at an increased frequency in patients who have had gastric bypass surgery. Other medical conditions less commonly associated with thiamine deficiency include hyperemesis gravidarum, diabetes, and malnutrition outside of alcohol use disorder. Prompt recognition of thiamine deficiency is important since it is readily treatable, and prompt treatment increases the likelihood of favorable clinical outcomes. On the other hand, delayed diagnosis and treatment of severe thiamine deficiency can lead to permanent neurological deficits or may even be fatal. Since clinicians often do not consider thiamine deficiency in patients without a history of alcohol use disorder, this diagnosis is often either delayed or missed altogether. This case series presents four patients with acute neuropathy due to thiamine deficiency (normal range >70-180 nmol/L) and with corresponding neurophysiological and electromyographical data. It highlights the need to consider thiamine deficiency in all patients with acute to subacute lower extremity weakness or numbness.",
+        "authors": [
+            "Karima Benameur",
+            "Karen Clarke"
+        ],
+        "journal": "Cureus",
+        "publication_date": "2025",
+        "doi": "10.7759/cureus.78310",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034881/"
+    },
+    {
+        "pmid": "40034852",
+        "title": "EPAS1 induction drives myocardial degeneration in desmoplakin-cardiomyopathy.",
+        "abstract": "No abstract available",
+        "authors": [
+            "Eirini Kyriakopoulou",
+            "Sebastiaan J van Kampen",
+            "Martijn Wehrens",
+            "Su Ji Han",
+            "Hesther de Ruiter",
+            "Jantine Monshouwer-Kloots",
+            "Emma Marshall",
+            "Andreas Brodehl",
+            "Petra van der Kraak",
+            "Anneline S J M Te Riele",
+            "Egidius E H L van Aarnhem",
+            "Linda W van Laake",
+            "Hoyee Tsui",
+            "Cornelis J Boogerd",
+            "Eva van Rooij"
+        ],
+        "journal": "iScience",
+        "publication_date": "2025",
+        "doi": "10.1016/j.isci.2025.111895",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034852/"
+    },
+    {
+        "pmid": "40034838",
+        "title": "Risk and impact of stroke across 38 countries and territories of the Americas from 1990 to 2021: a population-based trends analysis from the Global Burden of Disease Study 2021.",
+        "abstract": "Despite substantial declines in burden over time, stroke remains a public health threat in the Americas. This study aimed to assess the current magnitude, trends, and disparities in the estimates of stroke burden by sex and age in the Americas from 1990 to\u00a02021. Estimates from the Global Burden of Disease, Injuries and Risk Factors Study 2021 were used to analyze incidence, prevalence, mortality, years of life lost due to premature death, years lived with disabilities, and disability-adjusted life years (DALYs) caused by stroke and its major subtypes stratified by age, and sex in the Americas from 1990 to 2021. We used Joinpoint regression analysis to estimate the average annual percent change (AAPC) of stroke mortality and disease burden outcomes and assessed trends. In 2021, there were 1.1 million (95% uncertainty interval: 1.0-1.2) new cases, 12.9 million (12.3-13.7) prevalent cases, 0.5 million (0.5-0.6) deaths, and 11.4 million (10.6-12.1) DALYs due to stroke in the Americas. The absolute number of stroke burden outcomes increased from 1990 to 2021, but their corresponding age-standardized rates significantly declined. A deceleration in reduction rates of burden outcomes for all strokes and most stroke subtypes occurred over the last decade, with pronounced difference between sexes mainly in incidence among younger groups. From 2015 to 2021, trends in incidence rates from all stroke and stroke subtypes reversed to increase in most age groups, and strikingly, trends in mortality and DALY rates from ischemic stroke among younger populations reversed to upward with AAPC over 1.4%. A substantial number of countries contributed to these increasing trends. Regionally, the annual number of stroke cases and deaths significantly increased from 1990 to 2021, despite reductions in age-standardized rates. The declining pace in age-standardized stroke rates has decelerated in recent years, while trends in incidence, and ischemic stroke mortality and DALY among middle-aged adults and adults, reversed towards upward in the period 2015-2021. Further studies are needed to understand the determinants of this recent pattern and identify the most cost-effective interventions to stem this alarming trend. There was no funding source for this study.",
+        "authors": [
+            "Ram\u00f3n Martinez",
+            "Paula Mu\u00f1oz-Venturelli",
+            "Pedro Ordunez",
+            "Felipe Fregni",
+            "Carlos Abanto",
+            "Matias Alet",
+            "Tony Fabi\u00e1n Alvarez",
+            "Pablo Amaya",
+            "Sebastian Ameriso",
+            "Antonio Arauz",
+            "Miguel A Barboza",
+            "Hern\u00e1n Bayona",
+            "Antonio Bernab\u00e9-Ortiz",
+            "Juan Calleja",
+            "Vanessa Cano-Nigenda",
+            "Leonardo Augusto Carbonera",
+            "Rodrigo M Carrillo-Larco",
+            "Angel Corredor",
+            "Ana Cl\u00e1udia de Souza",
+            "Claudio Jimenez",
+            "Fernando Lanas",
+            "Sheila Martins",
+            "Victor Navia",
+            "Nelson Novarro-Escudero",
+            "Ver\u00f3nica Olavarr\u00eda",
+            "Bruce Ovbiagele",
+            "Kevin Pacheco-Barrios",
+            "Octavio Pontes-Neto",
+            "Virginia Pujol",
+            "Alejandro Rabinstein",
+            "Julieta Rosales",
+            "Andr\u00e9s Rosende",
+            "Gisele Sampaio Silva",
+            "Gustavo Saposnik",
+            "Souvik Sen",
+            "Fernando D Testai",
+            "Victor Urrutia",
+            "Craig S Anderson",
+            "Pablo M Lavados"
+        ],
+        "journal": "Lancet regional health. Americas",
+        "publication_date": "2025",
+        "doi": "10.1016/j.lana.2025.101017",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034838/"
+    },
+    {
+        "pmid": "40034737",
+        "title": "Parenteral nutritional support in surgical patients: expert consensus statements regarding intravenous lipid emulsions containing omega-3 fatty acids.",
+        "abstract": "The International Lipids in Parenteral Nutrition (PN) Summit was convened to offer practical guidance and expert consensus opinion regarding the use of intravenous lipid emulsions (ILEs) in various clinical settings. Herein, we briefly review aspects from this summit that are of particular importance for surgical/hospitalized patients. Summit participants identified and discussed new evidence, data, and analyses, that potentially influence the benefits and risks of ILEs in PN or their use in clinical practice. The summit meeting consisted of expert presentations that assessed recent clinical data and best practice, followed by periodic panel discussions to formulate consensus statements. Consensus statements were voted on, anonymously, by the meeting attendees. This review briefly summarizes the rationale for considering ILE choice as a central component of any PN strategy for surgical/hospitalized patients. Thereafter, special patient populations are considered, such as surgery-related intestinal failure, major trauma, and those with chronic critical illnesses. Expert consensus statements are also provided to help bridge the gaps between evidence and clinical practice, hence complementing formal PN societal guideline recommendations. The choice of ILE in PN, particularly those containing fish oil, can play a vital role in improving outcomes for surgical patients.",
+        "authors": [
+            "Robert G Martindale",
+            "David C Evans",
+            "Dan Waitzberg",
+            "Malissa Warren",
+            "Manpreet S Mundi",
+            "Stanislaw Klek",
+            "Paul E Wischmeyer",
+            "Martin D Rosenthal"
+        ],
+        "journal": "Frontiers in nutrition",
+        "publication_date": "2025",
+        "doi": "10.3389/fnut.2025.1546089",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034737/"
+    },
+    {
+        "pmid": "40034640",
+        "title": "Cutaneous Manifestation of Eruptive Xanthoma as a Consequence of Severe Hypertriglyceridemia: A Case Report Highlighting Diagnostic and Therapeutic Challenges.",
+        "abstract": "Eruptive xanthomas are clinical manifestations of lipid-laden foam cells in the dermis. The morphological subtype and anatomical location of xanthomas can provide insight into the underlying lipid disorder. Hyperlipidemia, a common condition in the general population, is categorized as primary or secondary\u00a0depending on disruptions in endogenous or exogenous lipoprotein pathways.\u00a0 We describe the case of a 29-year-old female with severe obesity who presented with numerous yellow papules on the trunk, buttocks, and extensor surfaces of the lower limbs, persisting for three months without subjective symptoms. Examination revealed inflammatory halos around some of the lesions. Dermoscopy showed irregularly shaped, light-yellow areas on a dense, yellowish background. Laboratory investigations revealed extreme hypertriglyceridemia (>4000 mg/dL), elevated total cholesterol (>1000 mg/dL), reduced high-density lipoprotein (HDL) and low-density lipoprotein (LDL) levels\u00a0and undetectable aminotransferase levels. The patient met the criteria for metabolic syndrome and was newly diagnosed with diabetes mellitus.\u00a0 A diagnosis of eruptive xanthomas was made, linked to impaired triglyceride clearance and hepatic overproduction of triglyceride-rich lipoproteins\u00a0secondary to diabetes, obesity, excessive caloric intake, and oral contraceptive use. The Fredrickson classification system identified hypertriglyceridemia as part of types I, IV, and V hyperlipoproteinemia.\u00a0 This case highlights the significance of a comprehensive diagnostic approach in patients with xanthomas, taking into account associated risk factors, family history, and lipoprotein abnormalities for early detection. Prompt treatment can lead to the complete resolution of eruptive xanthomas and prevent fatal complications such as acute pancreatitis.",
+        "authors": [
+            "Jeremi Morka",
+            "Aleksandra Morajko",
+            "Sylwia Otulak",
+            "Karolina Zara\u0144ska",
+            "Gra\u017cyna W\u0105sik"
+        ],
+        "journal": "Cureus",
+        "publication_date": "2025",
+        "doi": "10.7759/cureus.78329",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034640/"
+    },
+    {
+        "pmid": "40034631",
+        "title": "The Role of HbA1c in the Follow-Up and Control of Diabetes Mellitus.",
+        "abstract": "Introduction HbA1c is a biomarker that plays an essential role in the diagnosis and follow-up of diabetic patients. The sensitivity and specificity of the biomarker may be affected by common comorbidities seen in individuals with diabetes mellitus, such as kidney affection, cardiac affection, iron deficiency anemia, hemolytic anemia, hemoglobinopathies, and drug consumption. Aim To assess the role of HbA1c in the follow-up and control of Diabetes Mellitus across different patient populations and clinical scenarios. Methodology A quantitative research design to investigate the impact of residence location (inside or outside the Saudi Arabia). Through an electronic questionnaire in English and translated into Arabic, it was published online using Google Forms (Google, Mountain View, California) and was divided into three sections. Results The number of participating patients was 412 diabetic patients; their average age was from 51 to 60 years, and most of them were male. The study found a high level of awareness among diabetics about the HbA1c test, their knowledge of its importance, and their ability to perform the analysis regularly and periodically every year. However, there is a lack of practice, as most participants only performed follow-up every more than a few months, and the value of the last HbA1c test ranged between seven and ten. The percentage of diabetic patients whose cumulative blood sugar was more than ten and who did not take any action after learning of their high percentage (35.7%). Conclusion Diabetes is one of the most common health problems that continue\u00a0to spread worldwide. HbA1c testing may continue to be implemented as an essential part of the diagnostic and prognostic tool, resulting in better patient care and successful clinical outcomes. Testing for glycosylated hemoglobin levels should be done every three months. Patients and doctors should be cautioned not to rely exclusively on two-hour post-prandial blood glucose results, particularly in the case of insulin-dependent diabetes.",
+        "authors": [
+            "Soliman S Ghanem",
+            "Eman M Abdulkreem",
+            "Muath S Alfurayh",
+            "Amani A Ahmed",
+            "Hinda A Rikabi"
+        ],
+        "journal": "Cureus",
+        "publication_date": "2025",
+        "doi": "10.7759/cureus.78357",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034631/"
+    },
+    {
+        "pmid": "40034619",
+        "title": "The Manifestation of Congenital Hypoplasia of the Depressor Anguli Oris: A Case Report of Asymmetric Crying Facies.",
+        "abstract": "Congenital hypoplasia of the depressor anguli oris muscle (CHDAOM) is a relatively uncommon condition that causes asymmetric crying facies (ACF) in newborns. Although it primarily presents as a cosmetic issue, it could have implications in clinical practice. We report a case involving a seven-month-old girl who presented with asymmetric crying and other related clinical features. The patient exhibited lateral deviation of the mouth angle during smiling and crying but showed no additional clinical abnormalities. There were no signs of generalized facial muscle weakness or paralysis.\u00a0The diagnosis of CHDAOM\u00a0was confirmed, based on left-sided mouth deviation during smiling and crying, with no systemic manifestations. The parents reported the presence of deviation since birth. The asymmetry was clearly visible upon clinical examination. The clinical signs included the observed facial asymmetry, with no associated abnormal findings in other areas.\u00a0The patient's parents were counseled on the benign nature of the condition to alleviate any concerns. The report also includes a discussion of the management approach and addresses embryological considerations related to CHDAOM.",
+        "authors": [
+            "Abhimanyu Vasudeva",
+            "Ruchika Agrawal",
+            "Anchala Bhardwaj",
+            "Swati Dwivedi",
+            "Vivek Mishra",
+            "Vikram Vardhan"
+        ],
+        "journal": "Cureus",
+        "publication_date": "2025",
+        "doi": "10.7759/cureus.78352",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034619/"
+    },
+    {
+        "pmid": "40034575",
+        "title": "Cost-effectiveness of advanced hybrid closed loop therapy compared to standard insulin therapy for type 1 diabetes in pregnancy: an economic evaluation of the CRISTAL trial.",
+        "abstract": "A multicentre, randomised controlled trial (the CRISTAL trial), demonstrated the safety and efficacy of MiniMed\u2122 780G advanced hybrid closed loop (AHCL) therapy during pregnancy, showing improved glycaemic control overnight, less hypoglycaemia, and improved treatment satisfaction compared to standard insulin therapy (SoC, mainly open-loop insulin pump therapy). This study aimed to assess the cost-effectiveness of AHCL, which has a higher initial cost, compared to SoC in pregnant women with type 1 diabetes (T1D). A decision tree model was developed to estimate the cost-effectiveness of AHCL compared to SoC in pregnant women with T1D, covering pregnancy to birth and postpartum hospital discharge (a time horizon of 28 weeks). Total costs per strategy (in 2024 euros, \u20ac) were calculated from a healthcare payer perspective. The base-case analysis derived prevalence of pregnancy complications and hospitalisations directly related to diabetes management from the CRISTAL trial. Uncertainty was analysed by exploring multiple scenarios and sensitivity analyses. In the base-case analysis, the cost of using AHCL during pregnancy was estimated at \u20ac13,988.75 (95% CI: \u20ac12,240 to \u20ac16,062) compared to \u20ac14,221.33 (95% CI: \u20ac12,380 to \u20ac16,420) for SoC, indicating cost-savings of \u20ac232.57 per individual, alongside the demonstrated clinical benefits of AHCL. The primary cost driver was the AHCL device cost. This cost was offset by savings from shorter and less frequent hospital admissions (mainly due to severe hypoglycaemia and dysregulated diabetes) in the AHCL group compared to SoC. In our probabilistic sensitivity analysis, AHCL was dominant in 73% of the simulated cost-effectiveness pairs. AHCL might be cost-saving compared to SoC for pregnant women with T1D. However, more robust data are needed to assess the potential impact of AHCL therapy on pregnancy and long-term health outcomes. Diabetes Liga Research Fund and Medtronic.",
+        "authors": [
+            "Salima Azahaf",
+            "Kaat Beunen",
+            "Nancy Van Wilder",
+            "Dominique Ballaux",
+            "Gerd Vanhaverbeke",
+            "Youri Taes",
+            "Xavier-Philippe Aers",
+            "Frank Nobels",
+            "Liesbeth Van Huffel",
+            "Joke Marlier",
+            "Dahae Lee",
+            "Joke Cuypers",
+            "Vanessa Preumont",
+            "Sarah E Siegelaar",
+            "Rebecca C Painter",
+            "Annouschka Laenen",
+            "Pieter Gillard",
+            "Chantal Mathieu",
+            "Jeroen Luyten",
+            "Katrien Benhalima"
+        ],
+        "journal": "EClinicalMedicine",
+        "publication_date": "2025",
+        "doi": "10.1016/j.eclinm.2025.103106",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034575/"
+    },
+    {
+        "pmid": "40034566",
+        "title": "Investigating the presence and detectability of structural peripheral arterial changes in children with well-regulated type\u00a01 diabetes versus healthy controls using ultra-high frequency ultrasound: a single-centre cross-sectional and case-control study.",
+        "abstract": "Children with type 1 diabetes have an increased risk of macrovascular complications. This study used ultra-high frequency ultrasound (UHFUS), enabling differentiation of intima thickness (IT), and media thickness (MT) in peripheral arteries, to examine early peripheral arterial changes in children with type 1 diabetes (CWD). This cross-sectional and case-control study performed at the Queen Silvia Children's Hospital, Gothenburg, Sweden included CWD, aged 6-15.99 y/o, diabetes duration \u22655 years, compared to age and sex matched healthy controls. Exclusion criteria included other medical conditions or treatments besides insulin, abnormal examination findings or inability to handle extensive examinations. UHFUS measurements from the radial, dorsal pedal (DP), and carotid arteries as well as blood samples, blood pressure (BP)- and BMI z-score were collected from all study participants, and glucometrics from CWD. Study inclusion was performed during 02/25/2019-06/28/2022, and a total of 50 CWD, and 41 healthy controls were included in the study. Of these, five CWD and four healthy controls were excluded, resulting in 45 (22 girls (49%), 23 boys (51%)) CWD (12.0 (2.3) y/o) and 37 (19 girls (51%), 18 boys (49%)) healthy controls (11.3 (2.5) y/o) included in data analysis. CWD had a mean HbA1c of 6.6% (48.1\u00a0mmol/mol), higher DBP z-scores (p\u00a0=\u00a00.019), DP IT, DP intima-media thickness (IMT), and radial IT compared with controls (p\u00a0=\u00a00.003, p\u00a0=\u00a00.008, and p\u00a0=\u00a00.002, respectively). Carotid IT was correlated with time in range (r\u00a0=\u00a0-0.47, p\u00a0=\u00a00.014), time in tight range (r\u00a0=\u00a0-0.64, p\u00a0<\u00a00.001), and glucose variability (r\u00a0=\u00a00.40, p\u00a0=\u00a00.004) in CWD. Time in tight range and longitudinal HbA1c were the strongest determinants for carotid IT in CWD, and type 1 diabetes diagnosis was the strongest determinant for IT across all arteries. Children with well-regulated type 1 diabetes show early vascular changes in radial and DP arteries. Regression analyses indicate significant links between IT and hyperglycaemia and type 1 diabetes diagnosis respectively, indicating that structural arterial changes start in the intima. Our findings further emphasise increased time in normoglycemia as the most crucial action to prevent cardiovascular complications in type 1 diabetes. Additional larger studies are needed to confirm and further interpret the meaning of these results. ALF-agreement, Child Diabetes Foundation, Swedish Diabetes Foundation, and the Sahlgrenska University Hospital Foundations.",
+        "authors": [
+            "Ebba Bergdahl",
+            "Gun Forsander",
+            "Frida Sundberg",
+            "Linda Milkovic",
+            "Frida Dangardt"
+        ],
+        "journal": "EClinicalMedicine",
+        "publication_date": "2025",
+        "doi": "10.1016/j.eclinm.2025.103097",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034566/"
+    },
+    {
+        "pmid": "40034494",
+        "title": {
+            "i": "Klebsiella pneumoniae",
+            "#text": "Prevalence of hypervirulent  strains in COVID-19 patients with bacterial co-infections."
+        },
+        "abstract": "A recent alarming report from the World Health Organization highlighted the rapid global spread of a hypervirulent, carbapenem-resistant strain of . The COVID-19 pandemic frequently led to bacterial co-infections, with  being a common and highly pathogenic agent. This study aimed to assess KP characteristics via whole-genome sequencing and clarify its molecular epidemiology to guide standardized clinical treatment. Our retrospective analysis of clinical data from COVID-19 patients admitted to our hospital between 7 December 2022, and 2 January 2023-following China's policies changes, which led to a significant influx of patients-identified 17  isolates from sputum samples with bacterial co-infections. These isolates underwent whole-genome sequencing for ST typing, virulence gene annotation, plasmid profiling, and antimicrobial susceptibility testing. Of the 17  isolates, 52.9% were hypermucoviscous. Whole genome sequencing identified eight sequence types (STs), with ST23/KL1 being the most prevalent at 35.3%. Virulence genes were present in 94.1% of strains, including Yersiniabactin (70.6%), Aerobactin (82.3%), and Salmochelin (88.2%). Plasmid analysis revealed common IncHI1B/FIBk or IncFIBk types. All isolates were highly sensitive to antibiotics, except for blaSHV resistance. The 17 patients had a median age of 71 years and significant comorbidities, such as hypertension (64.7%) and diabetes (41.2%). The ST types and virulence gene profiles indicate that most  strains co-infecting COVID-19 patients are common, high-virulence strains prevalent in the Asia-Pacific region. Our findings suggest that COVID-19 may contribute to the spread of hypervirulent  strains, potentially informing the ongoing WHO epidemic alert.",
+        "authors": [
+            "Jingfen Zhang",
+            "Qiaoyu Li",
+            "Jingjing Liu",
+            "Fangfang Fan",
+            "Yiwei Shi",
+            "Xiao Yu"
+        ],
+        "journal": "Frontiers in microbiology",
+        "publication_date": "2025",
+        "doi": "10.3389/fmicb.2025.1535893",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034494/"
+    },
+    {
+        "pmid": "40034482",
+        "title": "Finerenone Ameliorates High Glucose-Induced Podocytes Epithelial-Mesenchymal Transition Through the Regulation of Kr\u00fcppel-Like Factor 5 in Diabetic Nephropathy.",
+        "abstract": "Diabetic nephropathy (DN) could impair the function of the glomerular filtration barrier by damaging the podocytes. Extant research has demonstrated that aldosterone plays a crucial role in this progression. Finerenone is a novel, high-selective mineralocorticoid receptor antagonist that has been demonstrated to be efficacious in renal protection in DN patients, albeit with an unclear underlying mechanism. Podocytes were stimulated with RPMI 1640 medium containing different concentrations of glucose and treated with finerenone to evaluate the protective effect of finerenone on podocytes in high glucose environment. Intraperitoneal injection of STZ was used to induce diabetic nephropathy rats and intragastric administration with finerenone or vehicles, and the changes of renal function, renal pathological changes and renal tissue protein expression were assayed. Cell experiment showed that high glucose could induce epithelial-mesenchymal transition (EMT). After finerenone treatment, we accessed the EMT-related protein and found EMT was reversed. Besides, the cell migration capacity and cytoskeleton were also ameliorated. To further explore the mechanism, we found that finerenone could upregulate the expression of Kr\u00fcppel-like factor 5 (KLF5) which was downregulated in a high glucose environment. After the silence of KLF5 in the presence of finerenone, the rescue experiment showed the protective function of finerenone is counteracted by KLF5. In animal experiment, after the treatment of finerenone, the level of blood creatinine decreased compared with the DN group while blood urea nitrogen (BUN) and potassium showed no significant difference. The pathological alterations of the treatment group also got ameliorated. Finerenone could normalize the level of EMT-related protein, nephrin, and KLF5 of kidney tissue in DN rats. Our results suggest that finerenone could alleviate high glucose-induced podocyte EMT via regulating KLF5. Further investigation is warranted to elucidate the precise underlying mechanism.",
+        "authors": [
+            "Jianqiang Shu",
+            "Dandan Chen",
+            "Wenzhen Chen",
+            "Xinyu Zhang",
+            "Simeng Wang",
+            "Nannan Chong",
+            "Zhikang Sun",
+            "Qinglian Wang",
+            "Jingshu Sun",
+            "Ying Xu"
+        ],
+        "journal": "Diabetes, metabolic syndrome and obesity : targets and therapy",
+        "publication_date": "2025",
+        "doi": "10.2147/DMSO.S503133",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034482/"
+    },
+    {
+        "pmid": "40034386",
+        "title": "Global, regional, and national burden of chronic kidney disease due to diabetes mellitus type 2 from 1990 to 2021, with projections to 2036: a systematic analysis for the Global Burden of Disease Study 2021.",
+        "abstract": "Chronic kidney disease (CKD) due to type 2 diabetes mellitus (T2DM) has emerged as a significant global health burden, with rising incidence and prevalence rates observed over the past decades. We utilized the latest data from the Global Burden of Disease Study (GBD) 2021. Firstly, we reported the number of incidence, prevalence, deaths, and Disability-Adjusted Life Years (DALYs) attributed to CKD due to T2DM, accompanied by their respective Age-Standardized Rates (ASRs), for the year 2021. This analysis encompassed a global perspective and was further stratified by various subtypes. Moreover, we examined trends globally and within specified sub-types to investigate the temporal dynamics of the ASRs. We estimated the percentage change in ASRs, providing a quantitative measure of the rate of change in the burden over the study period. Moreover, we utilized the Bayesian age-period-cohort (BAPC) model to forecast the future burden. Globally, the ASRs of CKD due to T2DM all have witnessed a notable rise except for age-standardized prevalence rate (ASPR). The trends observed in both sexes and nearly all age groups were found to be congruent with those of the overall population. The increase in disease burden being greatest in the middle and lower SDI regions. The predicted results showed that the ASRs would still increase from 2022 to 2036. This study highlights the critical importance of addressing the growing burden of T2DM-related CKD on global health. Effective prevention and management strategies, including improvements in diabetes care, renal health promotion, and access to healthcare services, are urgently needed to mitigate the future impact of T2DM-related CKD.",
+        "authors": [
+            "Ruikang Hu",
+            "Zhifeng Zhao",
+            "Luze Xie",
+            "Zhenjie Ma",
+            "Wen Wu",
+            "Shuangxi Li"
+        ],
+        "journal": "Frontiers in medicine",
+        "publication_date": "2025",
+        "doi": "10.3389/fmed.2025.1531811",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034386/"
+    },
+    {
+        "pmid": "40034298",
+        "title": "Bioactive small compounds effectively inhibit ChREBP overexpression to treat NAFLD and T2DM: A computational drug development approach.",
+        "abstract": "No abstract available",
+        "authors": [
+            "Hiron Saraj Devnath",
+            "Maisha Maliha Medha",
+            "Md Naharul Islam",
+            "Partha Biswas",
+            "Debasree Sen Oisay",
+            "Arafat Hossain",
+            "Rubaet Sharmin Ema",
+            "Md Mohaimenul Islam Tareq",
+            "Mimi Golder",
+            "Md Nazmul Hasan",
+            "Biswajit Biswas",
+            "Samir Kumar Sadhu"
+        ],
+        "journal": "Heliyon",
+        "publication_date": "2025",
+        "doi": "10.1016/j.heliyon.2025.e42477",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034298/"
+    },
+    {
+        "pmid": "40034229",
+        "title": "Gut microbiota-derived imidazole propionate: an emerging target for the prevention and treatment of cardiometabolic diseases.",
+        "abstract": "Despite significant advancements in prevention and treatment, cardiometabolic diseases continue to pose a high burden of incidence and mortality. The chronic progression of these diseases necessitates the identification of early and complementary therapeutic targets to elucidate and mitigate residual risks in patient care. The gut microbiota acts as a sentinel between internal and external environments, transmitting modified risks associated with these factors to the host. Imidazole propionate (ImP), a histidine metabolite originating from the gut microbiota, gained attention after being found to impair glucose tolerance and insulin signaling several years ago. Epidemiological studies over the past five years have demonstrated a robust correlation between ImP and an increased risk of onset of type 2 diabetes (T2D) and obesity, exacerbation of kidney traits in chronic kidney disease (CKD), progression of atherosclerotic plaques, and elevated mortality rates in heart failure (HF). These findings suggest that ImP may serve as a pivotal target for the prevention and treatment of cardiometabolic diseases. Mechanistic insights have uncovered associations between ImP and insulin resistance, impaired glucose metabolism, chronic inflammation, and intestinal barrier damage. This review provides a comprehensive summary of the current evidence regarding the association between ImP and cardiometabolic impairment, highlighting its potential in advancing personalized approaches to disease prevention and management, and exploring the intricate interplay of diet, gut microbiota, and ImP in cardiovascular metabolic impairment. Overall, this review offers valuable insights into the multifaceted roles of ImP in cardiometabolic diseases, identifies current knowledge gaps, and discusses future research directions.",
+        "authors": [
+            "Yan Zeng",
+            "Qi Wu",
+            "Man Guo",
+            "Fangyuan Teng",
+            "Chunxia Jiang",
+            "Jiao Chen",
+            "Xiaozhen Tan",
+            "Chen Zeng",
+            "Yang Long",
+            "Betty Yuen-Kwan Law",
+            "Yong Xu"
+        ],
+        "journal": "Frontiers in endocrinology",
+        "publication_date": "2025",
+        "doi": "10.3389/fendo.2025.1409119",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034229/"
+    },
+    {
+        "pmid": "40034226",
+        "title": "Morning vs. evening growth hormone injections and their impact on sleep-wake patterns and daytime alertness.",
+        "abstract": "Physiological growth hormone is secreted during slow-wave sleep. Traditionally, growth hormone (GH) therapy is given in daily GH injections before sleep. While morning and evening GH injections produce comparable effects on growth and IGF-1 levels, the evening schedule better imitates the physiological diurnal pattern of GH secretion and action. However, the inflexibility of bedtime injection schedules, coupled with the discomfort and psychological distress associated with the injection and local reaction, may cause sleep disturbances in patients, and may significantly burden them and their families. Our objective was to evaluate evening vs. morning daily GH injections with respect to sleep-wake pattern, duration, and activity index in children treated with growth hormone. An open-label, randomized crossover trial of 20 children (11 boys) 5-14 years of age with isolated growth hormone deficiency (n=12) and idiopathic short stature (n=8) treated with daily injections of median GH dose 33 (range13-46) mcg/kg/d was performed. Each subject received 2 weeks of evening injections and 2 weeks of morning injections. Patients' sleep-wake patterns and activity index were assessed by a 7-day actigraph covering the second week of each treatment schedule. All subjects slept well, within recommended ranges for sleep parameters, regardless of whether they were receiving morning or evening GH injections. Results were comparable for all measures: total time in bed (min), 526.0 \u00b1 51.8 vs 516.9 \u00b1 57.4 for evening and morning GH injections, respectively; total sleep time (min), 512.4 \u00b1 51.1 vs 504.3 \u00b1 57.7; sleep efficiency (%), 93.6 \u00b1 2.6 vs 94.2 \u00b1 2.3; sleep onset latency (min), 8.9 \u00b1 8.1 vs 7.4 \u00b1 6.8; number of arousals per night, 14.5 \u00b1 5.4 vs 12.5 \u00b1 5.2; and 24-hour activity index, 68.3 \u00b1 4.0 vs 67.0 \u00b1 5.0, respectively. No difference was found between the growth hormone deficient and idiopathic short stature group. No difference was found between boys and girls. Sleep-wake patterns and activity index were not affected by treatment schedules. We recommend that growth hormone injections take place at any regular time according to the family's convenience.",
+        "authors": [
+            "Aglaya Levshtein",
+            "Mohamad Sharkia",
+            "Maya Shimshi-Barash",
+            "Tal Almagor",
+            "Kerstin Albertsson-Wikland",
+            "Zeev Hochberg",
+            "Giora Pillar",
+            "Alina German"
+        ],
+        "journal": "Frontiers in endocrinology",
+        "publication_date": "2025",
+        "doi": "10.3389/fendo.2025.1483199",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034226/"
+    },
+    {
+        "pmid": "40034209",
+        "title": "SNA-modified antisense oligonucleotides: A new pathway for renal targeting?",
+        "abstract": "Antisense oligonucleotides (ASOs) have emerged as a powerful class of therapeutics capable of suppressing gene expression with remarkable specificity. However, the clinical applications of ASOs have been limited by delivery challenges and toxicities, particularly when repeated or high dosing is required. In the study by Tsuboi et\u00a0al., the authors present serinol nucleic acid (SNA)-modified gapmer ASOs that target the sodium-glucose cotransporter 2 (SGLT2) in mouse kidneys. With promising results, these SNA-modified ASOs display dose-dependent efficacy, prolonged knockdown, and importantly, a more favorable safety profile in both the kidney and liver compared with the 2'-MOE-modified counterpart. While some caveats remain-particularly around high-dose toxicity-these findings open the door to an approach that couples potency with improved tolerability, thereby highlighting SNA-modified ASOs as a potential next-generation platform for renal diseases.",
+        "authors": [
+            "Bernhard Dumoulin",
+            "Ken Yamada",
+            "Katalin Susztak"
+        ],
+        "journal": "Molecular therapy. Nucleic acids",
+        "publication_date": "2025",
+        "doi": "10.1016/j.omtn.2025.102476",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034209/"
+    },
+    {
+        "pmid": "40034110",
+        "title": "Cardiovascular disease in the Americas: the epidemiology of cardiovascular disease and its risk factors.",
+        "abstract": "This first article of the Series about Cardiovascular Disease in the Americas summarizes the epidemiology of CVD and its risk factors, and population-level strategies in place aimed at CVD prevention. While age-standardized CVD incidence and CV mortality rates have been decreasing across in the Americas since 1990, the annual number of CVD cases and related deaths have increased due to population growth and ageing. The burden of CVD is also slowly transitioning from high-income countries in North America to middle-income countries in Latin America and the Caribbean. Trends in CV risk factor levels have been mixed, with declines in smoking and mean cholesterol counterbalanced by higher prevalence of obesity and diabetes. Population-wide strategies aimed at controlling cardiometabolic risk factors and tobacco use have been implemented with varying degrees of success. There is a need to better implement existing CVD prevention strategies in the region.",
+        "authors": [
+            "Philip Joseph",
+            "Fernando Lanas",
+            "Greg Roth",
+            "Patricio Lopez-Jaramillo",
+            "Eva Lonn",
+            "Victoria Miller",
+            "Andrew Mente",
+            "Darryl Leong",
+            "Jon-David Schwalm",
+            "Salim Yusuf"
+        ],
+        "journal": "Lancet regional health. Americas",
+        "publication_date": "2025",
+        "doi": "10.1016/j.lana.2024.100960",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40034110/"
+    },
+    {
+        "pmid": "40033931",
+        "title": "Immunotherapies for prevention and treatment of type 1 diabetes.",
+        "abstract": "Type 1 diabetes (T1D) is characterized by the autoimmune destruction of insulin-producing \u03b2-cells of the pancreatic islets necessitating lifelong insulin therapy. Despite significant advancements in diabetes technology with increasingly sophisticated methods of insulin delivery and glucose monitoring, people with T1D remain at risk of severe complications like hypoglycemia and diabetic ketoacidosis. There has long been an interest in altering the immune response in T1D to prevent or cure T1D across its various stages with limited efficacy. This review highlights immunomodulatory approaches over the years including the anti-CD3 monoclonal antibody teplizumab which is now approved to delay onset of T1DM and other interventions under current investigation.",
+        "authors": [],
+        "journal": "Immunotherapy",
+        "publication_date": "2025",
+        "doi": "10.1080/1750743X.2025.2473311",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033931/"
+    },
+    {
+        "pmid": "40033680",
+        "title": "Marked improvement in HbA1c following introduction of biosimilar insulin to treatment regimen of children and youth with type 1 diabetes in Mali: A randomised controlled\u00a0trial.",
+        "abstract": "Evidence on outcomes of treating type 1 diabetes (T1D) with long-acting basal insulins in low-resourced settings is lacking. This study aimed to evaluate the impact of switching children and youth with T1D in the low-income country of Mali from human insulin via syringe to long-acting biosimilar insulin glargine delivered by reusable pens combined with short-acting insulin via syringe. A two-group parallel design randomised trial was conducted enrolling 260 youth aged <25\u2009years, diagnosed with T1D for \u226512\u2009months without prior use of analogue insulin. Youth were randomised 1:1 to either continue receiving current therapy or switch to analogue insulin. The primary outcome was HbA1c, collected at baseline and 3-monthly for 12 months. Primary outcome data were available for 130 (100%) youth in the intervention group and 128 (98.5%) in the control group. Over the 12-month study period, mean HbA1c decreased from 103 to 65\u2009mmol/mol (11.6%-8.1%) (p\u2009<\u20090.001) in the intervention group and from 101 to 93\u2009mmol/mol (11.4% to 10.7%) in the control group (p\u2009<\u20090.01), an absolute difference of 30\u2009mmol/mol (95% CI: -37, -24) (p\u2009<\u20090.001). The proportion of participants with HbA1c \u2265130\u2009mmol/mol (\u226514%) decreased from 38.5% to 0% in the intervention group, versus 40.6% to 21.9% in the control group. Switching to a basal-bolus insulin regimen including biosimilar glargine resulted in marked improvements in HbA1c and diabetic ketoacidosis episodes. With relevant training, resources, and support, use of long-acting analogue insulin for treating T1D in Mali was feasible and acceptable to participants and healthcare professionals.",
+        "authors": [
+            "St\u00e9phane Besan\u00e7on",
+            "Aveni Haynes",
+            "Amagara Domon Togo",
+            "Jessica Lynn Sandy",
+            "Jayanthi Maniam",
+            "Asa Traor\u00e9 Sidibe",
+            "Sylla Dj\u00e9neba",
+            "Carine de Beaufort",
+            "Montserrat Castellsague Perolini",
+            "Giacomo Gastaldi",
+            "David Beran",
+            "Cecile Eigenmann",
+            "Graham David Ogle"
+        ],
+        "journal": "Diabetic medicine : a journal of the British Diabetic Association",
+        "publication_date": "2025",
+        "doi": "10.1111/dme.70007",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033680/"
+    },
+    {
+        "pmid": "40033631",
+        "title": "Mortality and cardiovascular disease after cholecystectomy in type 2 diabetes: A nationwide longitudinal cohort study.",
+        "abstract": "The long-term effects of cholecystectomy on mortality and cardiovascular disease (CVD) in patients with diabetes have not been evaluated. In the present study, we investigated the longitudinal effects of cholecystectomy on mortality and CVD in a population-based cohort with type 2 diabetes (T2D). In total, 2\u2009216\u2009930 national health examination participants with T2D, including 19\u2009258 patients with cholecystectomy, were followed up for a median of 7.9\u2009years. The adjusted hazard ratios (aHRs) were calculated for all-cause mortality and CVD (myocardial infarction or ischemic stroke) in the cholecystectomy group compared with the nonoperative controls. The cholecystectomy group had a significantly higher risk of mortality than controls (aHR 1.10, 95% confidence interval [CI]: 1.06-1.14), which was more pronounced in younger participants (aHR 1.67 [1.38-2.03], 1.22 [1.13-1.31], and 1.05 [1.00-1.10] for those aged <50, 50-64, and \u226565\u2009years) and participants with less advanced diabetes treatment. The risk of CVD was increased with cholecystectomy only in those aged <50\u2009years (aHR 1.24 [1.01-1.52]). Cholecystectomy in patients with T2D is associated with an increased risk of all-cause mortality, particularly in younger patients without diabetes medication. Only patients aged <50\u2009years have a higher risk of developing CVD after cholecystectomy.",
+        "authors": [
+            "Han Na Jung",
+            "Ji Hye Heo",
+            "Eun Roh",
+            "Kyung-Do Han",
+            "Jun Goo Kang",
+            "Seong Jin Lee",
+            "Sung-Hee Ihm"
+        ],
+        "journal": "Journal of hepato-biliary-pancreatic sciences",
+        "publication_date": "2025",
+        "doi": "10.1002/jhbp.12109",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033631/"
+    },
+    {
+        "pmid": "40033620",
+        "title": "[Predictive value of preoperative inflammatory response indicators for incisional infection after spinal surgery].",
+        "abstract": "To explore the clinical significance of preoperative neutrophil to lymphocyte ratio (NLR), platelet to lymphocyte ratio (PLR), and C-reactive protein (CRP) to albumin (ALB) ratio in spinal surgery patients with postoperative incision infection. A total of 373 patients who underwent spinal surgery were collected and devided into two groups according to the postoperative incision infection situation. Among them, 65 cases in the incision infection group included 34 males and 31 females with a mean age of (56.01\u00b19.78) years old;308 cases in the non incision infection group included 157 males and 151 females with a mean age of (55.54\u00b110.19) years old. Blood cell analyzer was applied to detect neutrophils, lymphocytes, and platelets, and calculate NLR and PLR;immunoturbidimetry was applied to measure serum CRP and ALB levels and calculate CRP/ALB ratio;receiver operating characteristic (ROC) curve was applied to analyze the predictive value of preoperative NLR, PLR, and CRP/ALB ratio for postoperative spinal incision infection;Logistic multivariate regression was applied to analyze the influencing factors of incision infection after spinal surgery. The NLR(4.92\u00b11.13), PLR (119.32\u00b122.74), CRP/ALB ratio (10.19\u00b12.51), operation time (3.02\u00b10.64) h, history of diabetes 38.46%(25/65), and the proportion of patients with implant 32.31%(21/65) in the incision infection group were higher than those in the non incision infection group 3.72\u00b10.81, 90.58\u00b120.16, 7.23\u00b12.21, (2.26\u00b10.51) h, 16.88%(53/308), 11.69%(36/308), there were statistical differences(<0.05). The AUC of preoperative NLR, PLR, and CRP/ALB ratio alone and in combination for predicting postoperative incision infection after spinal surgery was 0.786, 0.806, 0.839, and 0.926, respectively. Preoperative NLR, PLR, and CRP/ALB ratio were independent risk factors for postoperative incision infection in spinal surgery(<0.05). The determination of preoperative NLR, PLR, and CRP/ALB ratio is beneficial for early prediction of postoperative spinal incision infection, and the combined detection of the three can further improve the accuracy of the prediction results.",
+        "authors": [
+            "Wei Liang",
+            "Rui-Li Zhuo",
+            "Shao-Dong Sun"
+        ],
+        "journal": "Zhongguo gu shang = China journal of orthopaedics and traumatology",
+        "publication_date": "Unknown",
+        "doi": "10.12200/j.issn.1003-0034.20230993",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033620/"
+    },
+    {
+        "pmid": "40033603",
+        "title": "Empagliflozin Mitigates High Glucose-Disrupted Mitochondrial Respiratory Function in H9c2 Cardiomyoblasts: A Comparative Study with NHE-1 and ROCK Inhibition.",
+        "abstract": "Hyperglycemia in patients with Diabetes Mellitus (DM) increases the risk of developing cardiomyopathy and heart failure. Elevation of sodium/proton exchanger-1 (NHE-1) expression and activity in cardiomyocytes leads to greater sensitivity to neurohormonal stimulation and cardiomyopathy, whereas inhibition of Sodium-Glucose Cotransporter 2 (SGLT2) clinically benefits DM population in reducing heart failure risk. This study characterized the expression profiles of NHE-1 and SGLT2 in H9c2 cardiomyoblasts under High Glucose (HG) exposure and examined the effects of Empagliflozin (EMPA), an SGLT2 inhibitor, on the HG-induced cardiomyoblasts deterioration, in comparison with NHE-1 specific inhibitor cariporide and Rho/ROCK inhibitor hydroxy fasudil. Western blotting and immunofluorescent staining were used to monitor protein expression and subcellular location, respectively. Reactive Oxygen Species (ROS) production and mitochondrial membrane potential were measured by flow cytometry. Kinetic mitochondrial oxygen consumption rate and respiratory function were monitored by a real-time cell metabolic analyzer. HG treatment upregulated SGLT2 and NHE-1 expression and RhoA/ROCK activity in H9c2 cardiomyoblasts. The HG-upregulated NHE-1 is localized in actin-rich cortical cytoplasm, implicating its involvement in cell shape and adhesion alterations. Treatment with NHE-1 and ROCK inhibitors, but not EMPA, significantly attenuated the HG-induced ROS overproduction and mitochondrial membrane potential elevation. However, EMPA treatment restored the HG-suppressed mitochondrial maximal respiration, spare respiratory capacity, and non-mitochondrial oxygen consumption rate. In comparison, Rho/ROCK and NHE-1 inhibitions effectively prevent ROS overproduction, while SGLT2 inhibition rescues the deteriorated mitochondrial respiratory function under diabetogenic conditions. Blockade of SGLT2, NHE-1, or Rho/ROCK activity is useful for the prevention of diabetic cardiomyopathy.",
+        "authors": [
+            "Cheng-I Cheng",
+            "Ming-Huei Chou",
+            "I-Ling Shih",
+            "Po-Han Chen",
+            "Ying-Hsien Kao"
+        ],
+        "journal": "Current molecular pharmacology",
+        "publication_date": "2025",
+        "doi": "10.2174/0118761429360640250227054103",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033603/"
+    },
+    {
+        "pmid": "40033597",
+        "title": "Association between Statin use and Abdominal Aortic Calcification in Male, Non-diabetic Elderly.",
+        "abstract": "Our study was to investigate the association between statin use and the prevalence of abdominal aortic calcification (AAC). The population was enrolled in the 2013-2014 cycle of the National Health and Nutrition Examination Survey (NHANES). The statin use was determined from the questionnaire inquiring the medications taken in the past month. The presence of AAC and severe AAC were assessed based on the AAC score measured by abdominal dual-energy X-ray absorptiometry (DXA). Logistic regression analysis was performed to evaluate the association between statin treatment and AAC after adjustment for potential confounders. The study included a total of 2074 individuals; the average age 61.6\u00b111.8 years old and 922 (44.5%) were male. AAC (AAC score >0) was present in 35.4% of the population and 12.0% had severe AAC. There were 836 (40.3%) statin users. After adjustment for demographics, lifestyles, comorbidities, and laboratory examinations, statin use was associated with higher odds of AAC (OR 1.28, 95%CI 1.02-1.62; P=0.034) and severe AAC (OR 1.78, 95%CI 1.24-2.55; P=0.002), respectively. Subgroup analysis revealed that the association was stronger in male, non-diabetic participants and those aged >60 years old. Stain use was associated with a greater presence of AAC and severe AAC. This association was stronger for male, non-diabetic participants and those aged >60 years.",
+        "authors": [
+            "Meng Wang",
+            "Changju Liu",
+            "Hongjian Shan"
+        ],
+        "journal": "Current vascular pharmacology",
+        "publication_date": "2025",
+        "doi": "10.2174/0115701611304116250221104627",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033597/"
+    },
+    {
+        "pmid": "40033593",
+        "title": "Fabrication and Efficacy Assessment of a Combination of Polyherbal Facewash Gels for the Treatment of Propionibacterium acnes.",
+        "abstract": "Azadirachta indica is also referred to as margosa or neem. It is found throughout the Indian subcontinent. Aegle marmelos L. (family: Rutaceae), sometimes referred to as Bael in Hindi, is a crucial food plant in India. The fruit has traditionally been used for the treatment of inflammation, diabetes, respiratory disorders, diarrhea, and dysentery. Aegle marmelos fruits are abundant in coumarins, carotenoids, terpenoids, and flavonoids. The plant referred to as Camellia sinensis, or tea, is part of the Theaceae family and is often grown in tropical and subtropical regions. Acne is a prolonged inflammatory condition of the skin that has a significant negative influence on patients' quality of life all over the world. Although it is most commonly seen in young people, it may impact people of any age. Herbal anti-acne facewash gels were prepared using Carbopol 934 and extracts from Azadirachta indica, Aegle marmelos L., and Camellia sinensis. The anti-acne facewash gel formulations were prepared in five different concentrations of 1%, 0.90%, 0.80%, 0.60%, and 0.50%, labeled as F1, F2, F3, F4, and F5, respectively. The anti-acne properties of the formulations were evaluated. The outcomes demonstrated gels to have an excellent spreading coefficient, a great physical appearance, and be non-irritating. Standard commercial formulations were used to investigate the effectiveness. Unlike marketed formulations, the developed formulation 3 (F3) demonstrated an excellent spreading coefficient and good % extrudability. It has been shown to be a more potent and effective polyherbal anti-acne facewash gel for treating acne. In recent years, there has been a rise in the patenting of herbal formulations, and several in vitro and in vivo studies have produced scientific proof of their medicinal efficacy. This work discusses many patented herbal compositions and how they might be used therapeutically to treat different diseases.",
+        "authors": [
+            "Suman Shrivastava",
+            "Saurabh Shrivastava",
+            "Rakesh Tirkey"
+        ],
+        "journal": "Recent advances in drug delivery and formulation",
+        "publication_date": "2025",
+        "doi": "10.2174/0126673878340038250224063731",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033593/"
+    },
+    {
+        "pmid": "40033576",
+        "title": "Ginsenoside Rg1 inhibits angiogenesis in diabetic retinopathy through the miR-100-3p/FBXW7/c-MYC molecular axis.",
+        "abstract": "Ginsenoside Rg1 is an active ingredient found mainly in ginseng that has a variety of pharmacological effects, such as hypoglycemic, antioxidant, and anti-inflammatory effects, and it inhibits vascular formation. In this study, we explored the effect of ginsenoside Rg1 on angiogenesis in diabetic retinopathy (DR) on the basis of its ability to inhibit angiogenesis and the specific molecular mechanism involved. We induced an in vivo model of diabetes by injection of 55\u2009mg/kg streptozotocin (STZ) into the abdominal cavity of SD rats daily for 3\u2009days. Moreover, human retinal microvascular endothelial cells (HRMECs) were treated with 30\u2009mmol/L glucose for 24\u2009h to construct a high-glucose (HG) cell model in vitro. The expression of related genes and proteins was detected by RT-qPCR and Western blotting. HRMECs and retinal damage were evaluated by CCK-8, scratch, tube formation assays, and HE staining. In this study, Rg1 inhibited HG-induced angiogenesis of HRMECs and inhibited STZ-induced vascular leakage and capillary degeneration in vivo, alleviating the progression of DR. Mechanistically, Rg1 upregulated the expression of FBXW7 by inhibiting miR-100-3p, thereby promoting the ubiquitination and degradation of c-MYC, inhibiting HG-induced HRMECs proliferation, migration, invasion, and angiogenesis, and improving the development of DR. Overall, our study demonstrates that ginsenoside Rg1 can inhibit DR angiogenesis via the miR-100-3p/FBXW7/c-MYC molecular axis. These findings provide a novel idea for the treatment of DR and provide an experimental basis for further research on the application of Rg1 in the treatment of DR.",
+        "authors": [
+            "Liping Xue",
+            "Min Hu",
+            "Yadi Li",
+            "Qin Zhu",
+            "Guanglong Zhou",
+            "Xiaofan Zhang",
+            "Yuan Zhou",
+            "Jieying Zhang",
+            "Peng Ding"
+        ],
+        "journal": "Journal of diabetes investigation",
+        "publication_date": "2025",
+        "doi": "10.1111/jdi.70016",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033576/"
+    },
+    {
+        "pmid": "40033530",
+        "title": "Clinical Efficacy of Tobramycin Dexamethasone+Pranoprofen Eye Drops on Endophthalmitis in Cataract Patients Complicated with Diabetes Mellitus after Intraocular Lens Implantation.",
+        "abstract": "There is little research on the anti-inflammatory efficacy and safety of tobramycin dexamethasone+pranoprofen eye drops in treating endophthalmitis. To appraise the efficacy and safety of tobramycin dexamethasone+propranolofen eye drops in the treatment of endophthalmitis. The degree of corneal edema, foveal thickness, score of anterior chamber (AC) flares, best corrected visual acuity (BCVA), fasting blood glucose, inflammatory indexes of serum and aqueous humor, and adverse reactions were observed every week. After the intervention with tobramycin dexamethasone+pranoprofen eye drops, corneal edema and foveal thickness reduced, BCVA improved, and the inflammatory markers in serum and aqueous humor decreased. Moreover, the incidence of adverse reactions in the tobramycin dexamethasone+pranoprofen group was lower than that in the control group and the fluorometholone group (P < 0.05). Tobramycin dexamethasone+pranoprofen eye drops can inhibit inflammation better, recover vision faster, and make the incidence of adverse reactions lower in treating cataract patients complicated with DM developing endophthalmitis induced.",
+        "authors": [
+            "J Wang",
+            "H X Fu",
+            "J Xu",
+            "C Chen",
+            "Q Qin",
+            "Z G Jing",
+            "N M Chen",
+            "L Lu"
+        ],
+        "journal": "Nigerian journal of clinical practice",
+        "publication_date": "2025",
+        "doi": "10.4103/njcp.njcp_565_24",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033530/"
+    },
+    {
+        "pmid": "40033506",
+        "title": "Efficacy of Human Dental-Pulp MSCs Modified by Double-genes on Wound Healing in Diabetic-Foot Model.",
+        "abstract": "Diabetic foot (DF) poses a great challenge to us due to its poor therapeutic effect. To seek a new cure, the human dental pulp mesenchymal stem cells (hDP-MSCs) were modified by vascular endothelial growth factor A (VEGFA) and basic fibroblast growth factor (bFGF) (hEDP-MSCs) to investigate their curative effect on DF wound in animal models. Forty-eight rats with DF constructed with streptozotocin and ligation of femoral arteries, were randomly divided into six equal groups, which respectively received an intramuscular injection of normal saline (Control group), hDP-MSCs, VEGFA-modified hDP-MSCs, bFGF-- modified hDP-MSCs, hEDP-MSCs, and Ad.VEGF.FGF (Ad.FV). The tissues around DF wound were collected to investigate the level of CD31, alpha-smooth muscle actin (\u03b1-SMA), and cytokines. The expression of Notch1, Hes1, and CD105 were assessed via Quantitative Real-Time Polymerase Chain Reaction (qRT-PCR) after administration. The hEDP-MSCs increased capillaries and decreased wound area (%). QRT-PCR showed that hEDP-MSCs over-expressed the mRNA of Notch1, hairy and enhancer of split 1 and CD105 in peri-wound tissue post-treatment. Meanwhile, the hEDP-MSCs expressed more CD31 and \u03b1-SMA than other groups. The hEDP-MSCs expressed more VEGFA and bFGF than hDP-MSCs, and yet less than Ad.FV. Compared with hDP-MSCs, the hEDP-MSCs down-regulated the expressions of interleukin-1 beta (IL-1\u03b2), interleukin (IL-6), and tissue necrosis factor \u03b1 (TNF-a) post-treatment. This study highlights the curative effect of hEDP-MSCs in the wound healing process, and demonstrates the decisive function of hEDP-MSCs in promoting angiogenesis and reducing inflammation.",
+        "authors": [
+            "Guangchang Zhu",
+            "Hongfang Meng",
+            "Yuefeng Yang",
+            "Qian Yuwen",
+            "Yong Zhou",
+            "Menghu Han",
+            "Xia Xia",
+            "Shiwei Song"
+        ],
+        "journal": "Current stem cell research & therapy",
+        "publication_date": "2025",
+        "doi": "10.2174/011574888X363143250221015057",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033506/"
+    },
+    {
+        "pmid": "40033391",
+        "title": "The role of programmed cell death in diabetes mellitus-induced erectile dysfunction: from mechanisms to targeted therapy.",
+        "abstract": "Diabetes mellitus (DM) is a chronic metabolic disease that often leads to vascular endothelial injury and peripheral neuropathy. Erectile dysfunction (ED), a common condition in andrology, is frequently associated with DM. The incidence of diabetes mellitus-induced ED (DMED) is second only to the cardiovascular complications of diabetes. Compared to other types of ED, DMED presents with more severe symptoms, rapid progression, and notable resistance to phosphodiesterase type 5 inhibitors (PDE5is). Various forms of programmed cell death (PCD)-including apoptosis, autophagy, pyroptosis, and ferroptosis-play pivotal roles in the pathogenesis of DMED. An exacerbation of DMED is linked to critical irritants like advanced glycation end-products (AGEs) and reactive oxygen species (ROS) in the corpus cavernosum tissue. These irritants can spark anomalous activations of diverse PCDs, which damage primary corpus cavernosum cells like cavernous nerve cells, endothelial cells, and myocytes, leading to ED. Hence, we reviewed current knowledge on the mechanisms and therapeutic potential of targeting PCDs in DMED, aiming to advance strategies for enhancing erectile function.",
+        "authors": [
+            "Jun Zhang",
+            "Sheng Xin",
+            "Jiaquan Mao",
+            "Xiaming Liu",
+            "Tao Wang",
+            "Jihong Liu",
+            "Xiaodong Song",
+            "Wen Song"
+        ],
+        "journal": "Reproductive biology and endocrinology : RB&E",
+        "publication_date": "2025",
+        "doi": "10.1186/s12958-025-01368-1",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033391/"
+    },
+    {
+        "pmid": "40033328",
+        "title": "From inequalities to solutions: an explanatory sequential study on type 2 diabetes health services utilization.",
+        "abstract": "Health inequities are a significant issue. This study aimed to measure and decompose socioeconomic inequality in the utilization of type 2 diabetes (T2D) services and propose solutions to mitigate these inequalities. This explanatory sequential mixed-method study was conducted in two phases: quantitative and qualitative. A total of 2000 T2D patients from health centers, hospitals, and diabetes clinics in Isfahan and Khuzestan provinces, Iran, were selected. In the quantitative phase, the existence of inequality in the utilization of T2D services was examined using the Concentration Index (CI) approach. To determine the contribution of each explanatory variable to T2D inequality, we used concentration index decomposition analysis. In the qualitative phase, based on the main contributors identified in the quantitative phase, we conducted semi-structured interviews with purposefully selected key experts to identify solutions for reducing inequality in the utilization of T2D services. The sample consisted of 65.3% men, with 40% of T2D patients being over 60\u00a0years old. The CI values were 0.31 (p\u2009<\u20090.05) for outpatient services, -0.10 (p\u2009>\u20090.05) for inpatient services, and 0.11 (p\u2009<\u20090.05) for pharmaceutical services. This indicates an inequality in the utilization of outpatient and pharmaceutical services among T2D patients, while the inequality in inpatient services was not significant. The main variables contributing to inequality in outpatient services were health status (33.54%), basic insurance (27.43%), and socioeconomic status (24.08%). For pharmaceutical services, the contributing variables were health status (22.20%), basic insurance (13.63%), and socioeconomic status (34.35%). Experts' solutions to reduce socioeconomic inequalities in Iran were classified into three main themes: socioeconomic status, health status, and basic insurance, with 29 sub-themes. The results suggest that targeted health interventions for poor T2D patients are recommended. Efforts towards universal coverage in outpatient care and commonly used pharmaceutical items, such as: Antidiabetic Drugs, Triglyceride Control Drugs, Cardiovascular Drugs, Neuropathy Drugs, and Nephropathy Drugs, should be considered.",
+        "authors": [
+            "Amin Torabipour",
+            "Saeed Karimi",
+            "Mostafa Amini-Rarani",
+            "Laleh Gharacheh"
+        ],
+        "journal": "BMC health services research",
+        "publication_date": "2025",
+        "doi": "10.1186/s12913-025-12222-w",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033328/"
+    },
+    {
+        "pmid": "40033317",
+        "title": "Development and validation of a clinical prediction model for dialysis-requiring acute kidney injury following heart transplantation: a single-center study from China.",
+        "abstract": "This study seeks to construct and internally validate a clinical prediction model for predicting new-onset dialysis-requiring acute kidney injury (AKI) following heart transplantation (HT). The Kaplan-Meier survival analysis and log-rank test were utilized for conducting the survival analysis. A clinical prediction model was developed to predict postoperative dialysis-requiring AKI, based on a logistic regression model and likelihood ratio test with Akaike Information Criterion. The performance of the prediction model was assessed using C-index, receiver operating characteristic curves, calibration curves, Brier score, and the Spiegelhalter Z-test. Clinical utility was evaluated using decision curve analysis and clinical impact curves. This study included a total of 525 patients who underwent orthotopic HT in the single center located in Wuhan, China between January 2015 and December 2021, with 16.57% developing postoperative dialysis-requiring AKI. Patients who experienced postoperative dialysis-requiring AKI exhibited a lower overall survival rate. All enrolled participants were randomly allocated into derivation (n\u2009=\u2009350) and validation (n\u2009=\u2009175) cohorts at a ratio of 2:1. The final prediction model comprised six indicators: diabetes, stroke, gout, prognostic nutritional index, estimated glomerular filtration rate, and cardiopulmonary bypass duration. The prediction model demonstrated outstanding discrimination (C-index of 0.792 in the derivation cohort and 0.834 in the validation cohort) as well as calibration performance, indicating strong concordance between observed and nomogram-predicted probabilities. Subgroup analysis based on age, preoperative serum creatine levels, and year of surgery also exhibited robust discrimination and calibration capabilities. Dialysis-requiring AKI following HT is associated with poor clinical prognosis. The prediction model, comprising six indicators, is capable of predicting dialysis-requiring AKI following HT. This prediction model holds promise in assisting both patients and clinicians in forecasting postoperative renal failure, thereby improving clinical management. Not applicable.",
+        "authors": [
+            "Shirui Qian",
+            "Bingxin Cao",
+            "Ping Li",
+            "Nianguo Dong"
+        ],
+        "journal": "BMC surgery",
+        "publication_date": "2025",
+        "doi": "10.1186/s12893-025-02817-9",
+        "pubmed_link": "https://pubmed.ncbi.nlm.nih.gov/40033317/"
     }
 ]
