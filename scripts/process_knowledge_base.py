@@ -37,7 +37,6 @@ class ADAContentProcessor(ContentProcessor):
 class PubMedContentProcessor(ContentProcessor):
     def process_article(self, article: Dict[str, Any]) -> List[Dict[str, Any]]:
         chunks = []
-        # Handle abstract and main content separately for academic papers
         abstract = article.get('abstract', '')
         content = article.get('content', '')
         
@@ -45,7 +44,7 @@ class PubMedContentProcessor(ContentProcessor):
             chunks.append({
                 "content": abstract,
                 "type": "academic_abstract",
-                "confidence": 0.95,  # Higher confidence for peer-reviewed abstracts
+                "confidence": 0.95,
                 "source": article.get('pubmed_link', ''),
                 "title": article.get('title', 'Untitled'),
                 "topics": ["abstract"] + article.get('keywords', []),
@@ -56,7 +55,6 @@ class PubMedContentProcessor(ContentProcessor):
                 }
             })
         
-        # Process main content into smaller chunks
         if content:
             sections = content.split('\n\n')
             for section in sections:
@@ -76,22 +74,41 @@ class PubMedContentProcessor(ContentProcessor):
                     })
         return chunks
 
+class TextContentProcessor(ContentProcessor):
+    def process_article(self, article: Dict[str, Any]) -> List[Dict[str, Any]]:
+        chunks = []
+        content = article.get('content', '')
+        sections = [s.strip() for s in content.split('\n\n') if len(s.strip()) > 50]
+        
+        for section in sections:
+            chunks.append({
+                "content": section,
+                "type": "text_content",
+                "confidence": 0.85,
+                "source": article.get('filename', 'Unknown'),
+                "title": article.get('title', 'Text Document'),
+                "topics": article.get('topics', ["general"]),
+            })
+        return chunks
+
 class KnowledgeBaseProcessor:
     def __init__(self, input_dir: str, output_dir: str):
         self.input_dir = input_dir
         self.output_dir = output_dir
         self.processors = {
             'community': ADAContentProcessor(),
-            'academic': PubMedContentProcessor()
+            'academic': PubMedContentProcessor(),
+            'text': TextContentProcessor()
         }
     
-    def detect_content_type(self, filename: str, data: List[Dict[str, Any]]) -> str:
+    def detect_content_type(self, filename: str, data: Any) -> str:
+        if filename.endswith('.txt'):
+            return 'text'
         if 'pubmed' in filename.lower():
             return 'academic'
         return 'community'
     
     def clean_content(self, content: str) -> str:
-        # Remove common unwanted content
         patterns_to_remove = [
             r'\d{4}\s+Crystal\s+Drive.+?Copyright.+?reserved\.',
             r'Learn your risk for type 2 and take steps to prevent it',
@@ -109,8 +126,20 @@ class KnowledgeBaseProcessor:
     def process_file(self, filename: str) -> List[Dict[str, Any]]:
         logging.info(f"Processing file: {filename}")
         
-        with open(os.path.join(self.input_dir, filename), 'r') as f:
-            data = json.load(f)
+        file_path = os.path.join(self.input_dir, filename)
+        
+        if filename.endswith('.txt'):
+            with open(file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+                data = [{
+                    'content': content,
+                    'filename': filename,
+                    'title': os.path.splitext(filename)[0],
+                    'topics': ['text_content']
+                }]
+        else:
+            with open(file_path, 'r') as f:
+                data = json.load(f)
         
         content_type = self.detect_content_type(filename, data)
         processor = self.processors[content_type]
@@ -120,13 +149,11 @@ class KnowledgeBaseProcessor:
         
         for idx, article in enumerate(data, 1):
             try:
-                # Clean content first
                 if 'content' in article:
                     article['content'] = self.clean_content(article['content'])
                 if 'abstract' in article:
                     article['abstract'] = self.clean_content(article['abstract'])
                 
-                # Process using appropriate processor
                 chunks = processor.process_article(article)
                 knowledge_base.extend(chunks)
                 
@@ -143,23 +170,18 @@ class KnowledgeBaseProcessor:
             os.makedirs(self.output_dir)
             
         for filename in os.listdir(self.input_dir):
-            if filename.endswith('.json'):
+            if filename.endswith(('.json', '.txt')):
                 knowledge_base = self.process_file(filename)
-                
-                # Save processed knowledge base
-                output_file = os.path.join(self.output_dir, f"kb_{filename}")
+                output_file = os.path.join(self.output_dir, f"kb_{os.path.splitext(filename)[0]}.json")
                 with open(output_file, 'w') as f:
                     json.dump(knowledge_base, f, indent=2)
                 logging.info(f"Saved processed knowledge base to {output_file}")
 
     def test_single_file(self, filename: str):
-        """Process a single file for testing"""
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
             
         knowledge_base = self.process_file(filename)
-        
-        # Save with test prefix
         output_file = os.path.join(self.output_dir, f"test_kb_{filename}")
         with open(output_file, 'w') as f:
             json.dump(knowledge_base, f, indent=2)
@@ -168,7 +190,6 @@ class KnowledgeBaseProcessor:
         return output_file
 
 if __name__ == "__main__":
-    # Define paths
     base_dir = "/Users/oli/Documents/GitHub/ADHealth"
     input_dir = os.path.join(base_dir, "scrapped_documents")
     output_dir = os.path.join(base_dir, "rag_system/knowledge_base")
@@ -191,7 +212,6 @@ if __name__ == "__main__":
             print("\nProcessing all files...")
             processor.process_all()
             
-            # Show summary of processed files
             print("\nProcessing completed!")
             print("Generated knowledge base files:")
             for file in os.listdir(output_dir):
@@ -199,10 +219,9 @@ if __name__ == "__main__":
                     print(f"- {file}")
                     
         elif mode == 2:
-            # Original test single file code
-            available_files = [f for f in os.listdir(input_dir) if f.endswith('.json')]
+            available_files = [f for f in os.listdir(input_dir) if f.endswith(('.json', '.txt'))]
             if not available_files:
-                print(f"\nError: No JSON files found in {input_dir}")
+                print(f"\nError: No JSON or TXT files found in {input_dir}")
                 exit(1)
             
             print(f"\nAvailable files to process:")
@@ -223,8 +242,6 @@ if __name__ == "__main__":
             
             try:
                 output_file = processor.test_single_file(test_file)
-                
-                # Print output location and preview
                 print(f"\nOutput saved to: {output_file}")
                 print("\nPreview of processed content:")
                 print("-----------------------------")
@@ -239,7 +256,6 @@ if __name__ == "__main__":
                         print(f"- Title: {chunk.get('title', 'Untitled')}")
                         print(f"- Content preview: {chunk.get('content', '')[:150]}...")
                         
-                        # Safely handle optional fields
                         topics = chunk.get('topics', [])
                         if topics:
                             print(f"- Topics: {', '.join(topics[:3])}")
@@ -248,7 +264,6 @@ if __name__ == "__main__":
                         if bullet_points:
                             print(f"- Sample bullet points: {', '.join(bullet_points[:2])}")
                             
-                        # Handle academic-specific fields
                         pub_info = chunk.get('publication_info', {})
                         if pub_info:
                             print("- Publication Info:")
