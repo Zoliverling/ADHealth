@@ -3,3 +3,4 @@
 *.db
 rag_system/knowledge_base/chroma_db/chroma.sqlite3
 diabetes_tracker.db
+.DS_Store
