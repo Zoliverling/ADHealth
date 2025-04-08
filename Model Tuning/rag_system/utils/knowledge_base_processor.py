@@ -48,6 +48,34 @@ class KnowledgeBaseProcessor:
         docs = self.vector_store.similarity_search(query, k=k)
         return [doc.page_content for doc in docs]
 
+    def query_knowledge_base_with_scores(self, query: str, k: int = 3) -> List[Dict[str, Any]]:
+        """Query the knowledge base and return relevant documents with similarity scores."""
+        if not self.vector_store:
+            self.initialize_vector_store()
+        
+        # Get documents with scores
+        docs_and_scores = self.vector_store.similarity_search_with_score(query, k=k)
+        
+        # Format results
+        results = []
+        for doc, score in docs_and_scores:
+            # Normalize score to 0-1 range (higher is better)
+            normalized_score = 1.0 - (score / 2.0)  # Assuming scores are typically 0-2 range
+            normalized_score = max(0.0, min(1.0, normalized_score))  # Clamp to 0-1
+            
+            # Extract source if available
+            source = doc.metadata.get('source', 'Unknown source')
+            title = doc.metadata.get('title', 'Untitled')
+            
+            results.append({
+                'content': doc.page_content,
+                'score': normalized_score,
+                'source': source,
+                'title': title
+            })
+        
+        return results
+
     def add_document(self, content: str, source: str):
         """Add a new document to the knowledge base."""
         docs = self.text_splitter.split_text(content)

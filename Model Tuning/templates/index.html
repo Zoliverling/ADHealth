@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="hero-title">Smart Diabetes Management with AI</h1>
+                <p class="hero-subtitle">Harness the power of artificial intelligence and domain-specific knowledge to better manage your diabetes care.</p>
+                <div class="d-flex gap-3">
+                    <a href="{{ url_for('dashboard') }}" class="btn btn-light btn-lg">Get Started</a>
+                    <a href="{{ url_for('prompt_testing') }}" class="btn btn-outline-light btn-lg">Test Prompts</a>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="https://placehold.co/600x400/2c7db1/white?text=ADHealth+Diabetes+Manager" alt="Diabetes Manager" class="img-fluid rounded-4 shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="container mb-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+            <h2 class="mb-4">What is ADHealth Diabetes Manager?</h2>
+            <p class="lead">ADHealth combines medical expertise with advanced AI to provide personalized diabetes management insights. Our system learns from your data and provides actionable recommendations to help you stay ahead of your health.</p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="feature-title">AI-Powered Insights</h3>
+                <p class="feature-text">Our advanced RAG (Retrieval Augmented Generation) system combines your health data with medical knowledge to provide contextually relevant recommendations.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3 class="feature-title">Multimodal Analysis</h3>
+                <p class="feature-text">Upload images of your meals, glucose readings, or medical documents, and our system will analyze them alongside your text inputs for comprehensive understanding.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="feature-title">Data Tracking</h3>
+                <p class="feature-text">Track glucose levels, insulin doses, carbohydrate intake, and more. Visualize trends and patterns to make informed decisions about your health.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- System Architecture -->
+<section class="container mb-5 py-5 bg-light rounded-4 px-4">
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+            <h2 class="mb-4">Our RAG System Architecture</h2>
+            <p>ADHealth uses a sophisticated Retrieval Augmented Generation (RAG) system to provide accurate, personalized diabetes insights.</p>
+        </div>
+    </div>
+    
+    <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="card border-0 bg-white shadow-sm">
+                <div class="card-body p-4">
+                    <h4 class="mb-3">How It Works</h4>
+                    <ol class="mb-0">
+                        <li class="mb-3">Your health data and questions are analyzed by our system</li>
+                        <li class="mb-3">Our knowledge base of diabetes research and medical guidelines is searched for relevant information</li>
+                        <li class="mb-3">The AI model combines your specific context with retrieved knowledge</li>
+                        <li class="mb-3">A personalized, medically-informed response is generated</li>
+                        <li>Your feedback helps improve future responses</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="bg-primary rounded-circle p-3 text-white me-3">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1">Knowledge Base</h5>
+                        <p class="mb-0">Curated collection of diabetes research, guidelines, and medical knowledge</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center mb-4">
+                    <div class="bg-primary rounded-circle p-3 text-white me-3">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1">AI Model</h5>
+                        <p class="mb-0">Advanced language model fine-tuned for diabetes domain knowledge</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center">
+                    <div class="bg-primary rounded-circle p-3 text-white me-3">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div>
+                        <h5 class="mb-1">Multimodal Processing</h5>
+                        <p class="mb-0">Analysis of both text and images for comprehensive understanding</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Prompt Testing Section -->
+<section class="container mb-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+            <h2 class="mb-4">Test Different Prompts</h2>
+            <p>Our prompt testing environment allows you to experiment with different types of questions and see how our AI responds.</p>
+            <a href="{{ url_for('prompt_testing') }}" class="btn btn-primary btn-lg mt-3">Try Prompt Testing</a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Doctor-Related Prompts</h4>
+                    <p class="card-text">Ask about what data your doctor might want to see, generate reports for checkups, or get help identifying patterns in your readings.</p>
+                    <div class="mt-3">
+                        <span class="badge bg-primary rounded-pill px-3 py-2 me-2 mb-2">Generate Reports</span>
+                        <span class="badge bg-primary rounded-pill px-3 py-2 me-2 mb-2">Flag Abnormal Readings</span>
+                        <span class="badge bg-primary rounded-pill px-3 py-2 me-2 mb-2">Compare to Standards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Nutrition & Exercise Prompts</h4>
+                    <p class="card-text">Understand how different foods and activities affect your glucose levels, identify patterns, and get personalized recommendations.</p>
+                    <div class="mt-3">
+                        <span class="badge bg-primary rounded-pill px-3 py-2 me-2 mb-2">Food Impact</span>
+                        <span class="badge bg-primary rounded-pill px-3 py-2 me-2 mb-2">Exercise Response</span>
+                        <span class="badge bg-primary rounded-pill px-3 py-2 me-2 mb-2">Meal Planning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Get Started Section -->
+<section class="container mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card border-0 bg-primary text-white">
+                <div class="card-body p-5 text-center">
+                    <h2 class="mb-4">Ready to get started?</h2>
+                    <p class="lead mb-4">Begin tracking your health data and receiving personalized insights today.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="{{ url_for('dashboard') }}" class="btn btn-light btn-lg">Go to Dashboard</a>
+                        <a href="{{ url_for('chat') }}" class="btn btn-outline-light btn-lg">Chat with AI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

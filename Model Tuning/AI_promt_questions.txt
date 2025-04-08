@@ -1,0 +1,65 @@
+Below are sample AI prompts users can explore in each category:
+👨‍⚕️ Doctor-Related Prompts
+“What kind of data will my doctor be interested in?”
+“Generate a report for my next checkup.”
+“Flag any glucose spikes outside my normal range.”
+“How do my glucose trends compare to standard targets?”
+“Summarize my last 30 days of glucose readings in a way my doctor will understand.”
+“Identify any patterns in my glucose levels that might concern a doctor.”
+🔵 Type 1 Diabetes (T1D) Prompts
+“How accurate is my CGM compared to my regular meter?”
+“When is my CGM most likely to give a false alarm?”
+“Does my insulin dosage impact my sleep or stress?”
+“Create a summary of today to send my parent/spouse.”
+“Does my brand of insulin become less effective the longer I use it?”
+“If I exercised more, would I need more insulin?”
+🟢 Type 2 Diabetes (T2D) Prompts
+“How do different meals affect my fasting glucose?”
+“Predict my A1c based on my data.”
+“Show a trend graph of my morning glucose levels over the last month.”
+“How does my glucose respond to cardio vs. weight training?”
+“What lifestyle changes would help me lower my glucose?”
+“How does stress impact my glucose?”
+🟡 Prediabetes Prompts
+“Am I trending toward diabetes?”
+“Which habits seem to improve my glucose the most?”
+“How do my blood sugar levels compare to a healthy range?”
+“What early warning signs should I look out for?”
+“Which meals seem to cause the biggest spikes?”
+“What can I do to stabilize my glucose levels?”
+🤰 Pregnancy & Gestational Diabetes Prompts
+“How do my glucose levels compare to pregnancy-safe targets?”
+“What meals seem to be the best for stable blood sugar during pregnancy?”
+“Are my glucose levels consistent, or do they fluctuate a lot?”
+“What lifestyle changes can help me keep my glucose stable during pregnancy?”
+“How does my glucose respond to exercise during pregnancy?”
+“What are signs I should talk to my doctor about gestational diabetes?”
+🍽️ Nutrition & Meal Insights Prompts
+“Which foods cause my biggest glucose spikes?”
+“How long after eating does my glucose peak?”
+“Compare my glucose response to different meals I’ve eaten this week.”
+“What time of day do I seem to process carbs best?”
+“Does skipping breakfast help or hurt my glucose levels?”
+“How does alcohol impact my glucose?”
+💪 Exercise & Activity Prompts
+“How does my glucose respond to cardio vs. strength training?”
+“How long after working out does my glucose return to normal?”
+“Do I tend to have post-exercise hypoglycemia?”
+“How does my glucose change on days I exercise vs. rest days?”
+“Should I adjust my meal timing around workouts?”
+“Does morning or evening exercise impact my glucose differently?”
+😴 Sleep & Wellness Prompts
+“How does sleep duration affect my fasting glucose?”
+“Do I see higher glucose readings after bad sleep?”
+“What’s the relationship between my stress levels and glucose spikes?”
+“Does dehydration seem to impact my glucose?”
+“Which days of the week are my glucose levels most stable?”
+“What lifestyle factors are linked to my best glucose control?”
+How This Feature Works (Example User Flow)
+User selects a prompt (e.g., “Predict my A1c based on my data.”)
+AdeleAI checks available data and assigns a Confidence Score (F-A or %).
+✅ If enough data exists → AdeleAI answers immediately.
+❌ If data is missing, AdeleAI suggests: “I need at least 3 months of glucose logs to make an accurate prediction. Would you like to start tracking this data?”
+User can tap “Remind Me” to queue missing inputs in QuickLog.
+Over time, as the user logs more data, AdeleAI updates the Confidence Score dynamically.
+Users can track their insights over time and refine their health management based on AI-powered trends.

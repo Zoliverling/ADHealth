@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="mb-4">Your Health Reports</h1>
+            <p class="lead">View your health metrics over time and track your progress.</p>
+        </div>
+    </div>
+    
+    <!-- Period Selection -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Select Time Period</h5>
+                        <div class="btn-group" role="group">
+                            <a href="{{ url_for('daily_data', period='week') }}" class="btn btn-outline-primary {% if current_period == 'week' %}active{% endif %}">Week</a>
+                            <a href="{{ url_for('daily_data', period='month') }}" class="btn btn-outline-primary {% if current_period == 'month' %}active{% endif %}">Month</a>
+                            <a href="{{ url_for('daily_data', period='quarter') }}" class="btn btn-outline-primary {% if current_period == 'quarter' %}active{% endif %}">Quarter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Averages Summary -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-calculator me-2"></i> Averages</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="metric-summary">
+                                <h6>Glucose Average</h6>
+                                <p class="metric-value">{{ averages.glucose_avg|default('--', true) }} <small>mg/dL</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="metric-summary">
+                                <h6>Insulin Average</h6>
+                                <p class="metric-value">{{ averages.insulin_avg|default('--', true) }} <small>units</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Detailed Data Table -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-table me-2"></i> Detailed Data</h5>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Glucose (mg/dL)</th>
+                                    <th>Insulin (units)</th>
+                                    <th>Blood Pressure</th>
+                                    <th>Carbs (g)</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for entry in entries %}
+                                <tr>
+                                    <td>{{ entry.date.strftime('%m/%d/%Y') }}</td>
+                                    <td>{{ entry.glucose_level|default('--', true) }}</td>
+                                    <td>{{ entry.insulin_units|default('--', true) }}</td>
+                                    <td>
+                                        {% if entry.systolic_bp and entry.diastolic_bp %}
+                                        {{ entry.systolic_bp }}/{{ entry.diastolic_bp }}
+                                        {% else %}
+                                        --
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ entry.carbs|default('--', true) }}</td>
+                                    <td>{{ entry.notes|default('', true) }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

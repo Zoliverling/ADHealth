@@ -1,0 +1,451 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="mb-4">Your Diabetes Dashboard</h1>
+            <p class="lead">Track your health metrics and get personalized AI insights for better diabetes management.</p>
+        </div>
+    </div>
+    
+    <!-- Today's Metrics Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-calendar-day me-2"></i> Today's Health Metrics</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!-- Glucose Metric -->
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <div class="metric-card">
+                                <div class="metric-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <h4 class="metric-value">{{ entry.glucose_level|default('--', true) }} <small>mg/dL</small></h4>
+                                <p class="metric-label">Blood Glucose</p>
+                                <div class="mt-3">
+                                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#glucoseModal">
+                                        {% if entry.glucose_level %}Update{% else %}Add{% endif %}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Insulin Metric -->
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <div class="metric-card">
+                                <div class="metric-icon">
+                                    <i class="fas fa-syringe"></i>
+                                </div>
+                                <h4 class="metric-value">{{ entry.insulin_units|default('--', true) }} <small>units</small></h4>
+                                <p class="metric-label">Insulin</p>
+                                <div class="mt-3">
+                                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#insulinModal">
+                                        {% if entry.insulin_units %}Update{% else %}Add{% endif %}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Blood Pressure Metric -->
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <div class="metric-card">
+                                <div class="metric-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <h4 class="metric-value">
+                                    {% if entry.systolic_bp and entry.diastolic_bp %}
+                                    {{ entry.systolic_bp }}/{{ entry.diastolic_bp }}
+                                    {% else %}
+                                    --/--
+                                    {% endif %}
+                                </h4>
+                                <p class="metric-label">Blood Pressure</p>
+                                <div class="mt-3">
+                                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#bpModal">
+                                        {% if entry.systolic_bp and entry.diastolic_bp %}Update{% else %}Add{% endif %}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Carbs Metric -->
+                        <div class="col-md-3 col-sm-6">
+                            <div class="metric-card">
+                                <div class="metric-icon">
+                                    <i class="fas fa-bread-slice"></i>
+                                </div>
+                                <h4 class="metric-value">{{ entry.carbs|default('--', true) }} <small>g</small></h4>
+                                <p class="metric-label">Carbs</p>
+                                <div class="mt-3">
+                                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#carbsModal">
+                                        {% if entry.carbs %}Update{% else %}Add{% endif %}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- AI Insights Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="mb-4">AI Insights</h2>
+            
+            <div class="row">
+                <!-- Glucose Insights -->
+                <div class="col-md-4 mb-4">
+                    <div class="insight-card">
+                        <div class="insight-header">
+                            <div class="insight-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h5 class="insight-title">Glucose Insight</h5>
+                        </div>
+                        <div class="insight-content">
+                            {% if glucose_insight %}
+                            {{ glucose_insight }}
+                            {% else %}
+                            <p class="text-muted">Add glucose readings to receive personalized insights.</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Insulin Insights -->
+                <div class="col-md-4 mb-4">
+                    <div class="insight-card">
+                        <div class="insight-header">
+                            <div class="insight-icon">
+                                <i class="fas fa-syringe"></i>
+                            </div>
+                            <h5 class="insight-title">Insulin Insight</h5>
+                        </div>
+                        <div class="insight-content">
+                            {% if insulin_insight %}
+                            {{ insulin_insight }}
+                            {% else %}
+                            <p class="text-muted">Add insulin doses to receive personalized insights.</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blood Pressure Insights -->
+                <div class="col-md-4 mb-4">
+                    <div class="insight-card">
+                        <div class="insight-header">
+                            <div class="insight-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h5 class="insight-title">Blood Pressure Insight</h5>
+                        </div>
+                        <div class="insight-content">
+                            {% if bp_insight %}
+                            {{ bp_insight }}
+                            {% else %}
+                            <p class="text-muted">Add blood pressure readings to receive personalized insights.</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Recent History Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0"><i class="fas fa-history me-2"></i> Recent History</h5>
+                    <a href="{{ url_for('daily_data') }}" class="btn btn-sm btn-light">View Full History</a>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Glucose (mg/dL)</th>
+                                    <th>Insulin (units)</th>
+                                    <th>Blood Pressure</th>
+                                    <th>Carbs (g)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for entry in recent_entries %}
+                                <tr>
+                                    <td>{{ entry.date.strftime('%m/%d/%Y') }}</td>
+                                    <td>{{ entry.glucose_level|default('--', true) }}</td>
+                                    <td>{{ entry.insulin_units|default('--', true) }}</td>
+                                    <td>
+                                        {% if entry.systolic_bp and entry.diastolic_bp %}
+                                        {{ entry.systolic_bp }}/{{ entry.diastolic_bp }}
+                                        {% else %}
+                                        --
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ entry.carbs|default('--', true) }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modals for updating metrics -->
+    <!-- Glucose Modal -->
+    <div class="modal fade" id="glucoseModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Update Glucose Reading</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="glucoseForm">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="glucoseLevel" class="form-label">Blood Glucose (mg/dL)</label>
+                            <input type="number" class="form-control" id="glucoseLevel" name="glucose_level" value="{{ entry.glucose_level }}" step="0.1" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Add Image (Optional)</label>
+                            <div class="image-upload">
+                                <label for="glucoseImageUpload">
+                                    <i class="fas fa-image"></i> Choose Image
+                                </label>
+                                <input type="file" id="glucoseImageUpload" name="image" accept="image/png, image/jpeg, image/jpg">
+                                <span class="file-name" id="glucoseFileName"></span>
+                            </div>
+                            <div id="glucoseImagePreview" class="mt-2 d-none">
+                                <img id="glucoseSelectedImage" class="selected-image img-fluid" src="#" alt="Selected Image">
+                                <button type="button" class="btn btn-sm btn-danger mt-2" id="removeGlucoseImage">Remove Image</button>
+                            </div>
+                            <small class="form-text text-muted mt-2">Upload a photo of your glucose meter for AI analysis</small>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Insulin Modal -->
+    <div class="modal fade" id="insulinModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Update Insulin Dose</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="insulinForm">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="insulinUnits" class="form-label">Insulin Units</label>
+                            <input type="number" class="form-control" id="insulinUnits" name="insulin_units" value="{{ entry.insulin_units }}" step="0.5" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Add Image (Optional)</label>
+                            <div class="image-upload">
+                                <label for="insulinImageUpload">
+                                    <i class="fas fa-image"></i> Choose Image
+                                </label>
+                                <input type="file" id="insulinImageUpload" name="image" accept="image/png, image/jpeg, image/jpg">
+                                <span class="file-name" id="insulinFileName"></span>
+                            </div>
+                            <div id="insulinImagePreview" class="mt-2 d-none">
+                                <img id="insulinSelectedImage" class="selected-image img-fluid" src="#" alt="Selected Image">
+                                <button type="button" class="btn btn-sm btn-danger mt-2" id="removeInsulinImage">Remove Image</button>
+                            </div>
+                            <small class="form-text text-muted mt-2">Upload a photo of your insulin pen/pump for AI analysis</small>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Blood Pressure Modal -->
+    <div class="modal fade" id="bpModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Update Blood Pressure</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="bpForm">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="systolicBP" class="form-label">Systolic (mmHg)</label>
+                                <input type="number" class="form-control" id="systolicBP" name="systolic_bp" value="{{ entry.systolic_bp }}" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="diastolicBP" class="form-label">Diastolic (mmHg)</label>
+                                <input type="number" class="form-control" id="diastolicBP" name="diastolic_bp" value="{{ entry.diastolic_bp }}" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Add Image (Optional)</label>
+                            <div class="image-upload">
+                                <label for="bpImageUpload">
+                                    <i class="fas fa-image"></i> Choose Image
+                                </label>
+                                <input type="file" id="bpImageUpload" name="image" accept="image/png, image/jpeg, image/jpg">
+                                <span class="file-name" id="bpFileName"></span>
+                            </div>
+                            <div id="bpImagePreview" class="mt-2 d-none">
+                                <img id="bpSelectedImage" class="selected-image img-fluid" src="#" alt="Selected Image">
+                                <button type="button" class="btn btn-sm btn-danger mt-2" id="removeBPImage">Remove Image</button>
+                            </div>
+                            <small class="form-text text-muted mt-2">Upload a photo of your blood pressure monitor for AI analysis</small>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carbs Modal -->
+    <div class="modal fade" id="carbsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Update Carb Intake</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="carbsForm">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="carbsValue" class="form-label">Carbohydrates (g)</label>
+                            <input type="number" class="form-control" id="carbsValue" name="carbs" value="{{ entry.carbs }}" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Add Image (Optional)</label>
+                            <div class="image-upload">
+                                <label for="carbsImageUpload">
+                                    <i class="fas fa-image"></i> Choose Image
+                                </label>
+                                <input type="file" id="carbsImageUpload" name="image" accept="image/png, image/jpeg, image/jpg">
+                                <span class="file-name" id="carbsFileName"></span>
+                            </div>
+                            <div id="carbsImagePreview" class="mt-2 d-none">
+                                <img id="carbsSelectedImage" class="selected-image img-fluid" src="#" alt="Selected Image">
+                                <button type="button" class="btn btn-sm btn-danger mt-2" id="removeCarbsImage">Remove Image</button>
+                            </div>
+                            <small class="form-text text-muted mt-2">Upload a photo of your meal for AI carb estimation</small>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    $(document).ready(function() {
+        // Handle image upload for all forms
+        function setupImageUpload(uploadId, previewId, imageId, fileNameId, removeId) {
+            $(uploadId).change(function() {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        $(imageId).attr('src', e.target.result);
+                        $(previewId).removeClass('d-none');
+                        $(fileNameId).text(file.name);
+                    }
+                    reader.readAsDataURL(file);
+                }
+            });
+            
+            $(removeId).click(function() {
+                $(uploadId).val('');
+                $(previewId).addClass('d-none');
+                $(fileNameId).text('');
+            });
+        }
+        
+        // Set up image upload for each form
+        setupImageUpload('#glucoseImageUpload', '#glucoseImagePreview', '#glucoseSelectedImage', '#glucoseFileName', '#removeGlucoseImage');
+        setupImageUpload('#insulinImageUpload', '#insulinImagePreview', '#insulinSelectedImage', '#insulinFileName', '#removeInsulinImage');
+        setupImageUpload('#bpImageUpload', '#bpImagePreview', '#bpSelectedImage', '#bpFileName', '#removeBPImage');
+        setupImageUpload('#carbsImageUpload', '#carbsImagePreview', '#carbsSelectedImage', '#carbsFileName', '#removeCarbsImage');
+        
+        // Form submissions with image upload
+        function setupFormSubmission(formId, metric, modalId, valueKey) {
+            $(formId).submit(function(e) {
+                e.preventDefault();
+                
+                // Create FormData object to handle file upload
+                const formData = new FormData(this);
+                
+                // Show loading overlay or disable button
+                const submitBtn = $(this).find('button[type="submit"]');
+                submitBtn.html('<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Saving...');
+                submitBtn.prop('disabled', true);
+                
+                // Send AJAX request
+                $.ajax({
+                    url: `/update/${metric}`,
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        // Close modal and reload page to show updated values
+                        $(modalId).modal('hide');
+                        location.reload();
+                    },
+                    error: function(xhr) {
+                        // Show error message
+                        alert('An error occurred while saving. Please try again.');
+                        console.error(xhr);
+                    },
+                    complete: function() {
+                        // Reset button state
+                        submitBtn.html('Save');
+                        submitBtn.prop('disabled', false);
+                    }
+                });
+            });
+        }
+        
+        // Set up form submissions
+        setupFormSubmission('#glucoseForm', 'glucose', '#glucoseModal', 'glucose_level');
+        setupFormSubmission('#insulinForm', 'insulin', '#insulinModal', 'insulin_units');
+        setupFormSubmission('#bpForm', 'bp', '#bpModal', 'systolic_bp');
+        setupFormSubmission('#carbsForm', 'carbs', '#carbsModal', 'carbs');
+    });
+</script>
+{% endblock %} 

@@ -1,0 +1,272 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="mb-4">Diabetes Assistant Chat</h1>
+            <p class="lead">Ask questions about diabetes management, get personalized insights based on your health data, and upload images for more detailed analysis.</p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Chat Interface -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Chat</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chat-messages" id="chatMessages">
+                        {% for message in messages %}
+                        <div class="message {% if message.is_user %}user-message{% else %}bot-message{% endif %} mb-3">
+                            <div class="message-content p-3 rounded">
+                                {{ message.content | safe }}
+                            </div>
+                            {% if not message.is_user and message.sources %}
+                            <div class="message-sources mt-2">
+                                <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#sources{{ loop.index }}" aria-expanded="false">
+                                    View Sources
+                                </button>
+                                <div class="collapse mt-2" id="sources{{ loop.index }}">
+                                    <div class="card card-body">
+                                        <h6>Retrieved Documents:</h6>
+                                        <div class="accordion">
+                                            {% for source in message.sources %}
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading{{ loop.parent.loop.index }}_{{ loop.index }}">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                                            data-bs-target="#collapse{{ loop.parent.loop.index }}_{{ loop.index }}" 
+                                                            aria-expanded="false">
+                                                        {{ source.title or source.source }} (Score: {{ "%.2f"|format(source.score) }})
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse{{ loop.parent.loop.index }}_{{ loop.index }}" 
+                                                     class="accordion-collapse collapse" data-bs-parent="#sources{{ loop.parent.loop.index }}">
+                                                    <div class="accordion-body">
+                                                        {{ source.content }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                        {% if message.confidence is not none %}
+                                        <div class="mb-2">
+                                            <small class="text-muted">Confidence: {{ "%.1f"|format(message.confidence * 100) }}%</small>
+                                            <div class="progress" style="height: 5px;">
+                                                <div class="progress-bar {% if message.confidence >= 0.7 %}bg-success{% elif message.confidence >= 0.4 %}bg-warning{% else %}bg-danger{% endif %}"
+                                                     role="progressbar" 
+                                                     style="width: {{ message.confidence * 100 }}%" 
+                                                     aria-valuenow="{{ message.confidence * 100 }}" 
+                                                     aria-valuemin="0" 
+                                                     aria-valuemax="100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <form id="chatForm" class="mt-4" method="POST" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Upload Image (Optional)</label>
+                            <input type="file" class="form-control" id="image" name="image" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <!-- Quick Suggestions -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-lightbulb me-2"></i> Quick Suggestions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-primary suggestion-btn" data-message="What's my glucose trend over the past week?">
+                            <i class="fas fa-chart-line me-2"></i> What's my glucose trend?
+                        </button>
+                        <button class="btn btn-outline-primary suggestion-btn" data-message="How does exercise affect my blood sugar?">
+                            <i class="fas fa-running me-2"></i> Exercise & blood sugar
+                        </button>
+                        <button class="btn btn-outline-primary suggestion-btn" data-message="What foods should I avoid with my current readings?">
+                            <i class="fas fa-utensils me-2"></i> Food recommendations
+                        </button>
+                        <button class="btn btn-outline-primary suggestion-btn" data-message="Is my insulin dosage appropriate?">
+                            <i class="fas fa-syringe me-2"></i> Insulin dosage check
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image Upload Tips -->
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-image me-2"></i> Image Upload Tips</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-0">
+                            <i class="fas fa-camera text-primary me-2"></i> Upload glucose meter readings for analysis
+                        </li>
+                        <li class="list-group-item px-0">
+                            <i class="fas fa-utensils text-primary me-2"></i> Share meal photos for carb estimation
+                        </li>
+                        <li class="list-group-item px-0">
+                            <i class="fas fa-file-medical text-primary me-2"></i> Upload medical documents for interpretation
+                        </li>
+                        <li class="list-group-item px-0">
+                            <i class="fas fa-chart-line text-primary me-2"></i> Share CGM graphs for pattern analysis
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    $(document).ready(function() {
+        // Scroll to bottom of chat on page load
+        const chatMessages = document.getElementById('chatMessages');
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+        
+        // Handle image upload
+        $('#imageUpload').change(function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#previewImg').attr('src', e.target.result);
+                    $('#fileName').text(file.name);
+                    $('#imagePreview').show();
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+        
+        // Remove image
+        $('#removeImage').click(function() {
+            $('#imageUpload').val('');
+            $('#imagePreview').hide();
+        });
+        
+        // Handle quick suggestions
+        $('.suggestion-btn').click(function() {
+            const message = $(this).data('message');
+            $('#messageInput').val(message);
+            $('#messageInput').focus();
+        });
+        
+        // Submit chat form
+        $('#chatForm').submit(function(e) {
+            e.preventDefault();
+            
+            const message = $('#messageInput').val().trim();
+            if (!message) {
+                return;
+            }
+            
+            // Create FormData object to handle file upload
+            const formData = new FormData();
+            formData.append('message', message);
+            
+            // Add image if selected
+            const imageInput = document.getElementById('imageUpload');
+            if (imageInput.files.length > 0) {
+                formData.append('image', imageInput.files[0]);
+            }
+            
+            // Add user message to chat
+            const timestamp = new Date();
+            const timeString = timestamp.getHours().toString().padStart(2, '0') + ':' + 
+                             timestamp.getMinutes().toString().padStart(2, '0');
+            
+            $('#chatMessages').append(`
+                <div class="chat-message user">
+                    <div class="message-content">
+                        <p>${message}</p>
+                        <div class="message-time">${timeString}</div>
+                    </div>
+                </div>
+                <div class="chat-message ai" id="typingIndicator">
+                    <div class="message-content">
+                        <p><i class="fas fa-circle-notch fa-spin me-2"></i> Thinking...</p>
+                    </div>
+                </div>
+            `);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            // Clear input and image preview
+            $('#messageInput').val('');
+            $('#imageUpload').val('');
+            $('#imagePreview').hide();
+            
+            // Send AJAX request
+            $.ajax({
+                url: "{{ url_for('chat') }}",
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    // Remove typing indicator
+                    $('#typingIndicator').remove();
+                    
+                    // Add AI response
+                    $('#chatMessages').append(`
+                        <div class="chat-message ai">
+                            <div class="message-content">
+                                <p>${response.response}</p>
+                                <div class="message-time">${timeString}</div>
+                            </div>
+                        </div>
+                    `);
+                    
+                    // Scroll to bottom
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                },
+                error: function(xhr) {
+                    // Remove typing indicator
+                    $('#typingIndicator').remove();
+                    
+                    // Add error message
+                    let errorMessage = 'Sorry, I encountered a problem processing your request.';
+                    if (xhr.responseJSON && xhr.responseJSON.error) {
+                        errorMessage = xhr.responseJSON.error;
+                    }
+                    
+                    $('#chatMessages').append(`
+                        <div class="chat-message ai">
+                            <div class="message-content">
+                                <p class="text-danger">${errorMessage}</p>
+                                <div class="message-time">${timeString}</div>
+                            </div>
+                        </div>
+                    `);
+                    
+                    // Scroll to bottom
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+            });
+        });
+    });
+</script>
+{% endblock %} 
